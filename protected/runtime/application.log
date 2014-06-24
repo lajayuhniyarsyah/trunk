@@ -1,0 +1,1066 @@
+2014/06/23 02:21:15 [error] [php] require(C:\xampp\htdocs\git\trunk\protected\components\components/packages.php): failed to open stream: No such file or directory (C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php:260)
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php(214): Booster->includeAssets()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): Booster->init()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CWebApplication->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CWebApplication->__construct()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): createApplication()
+#6 C:\xampp\htdocs\git\trunk\index.php(13): createWebApplication()
+REQUEST_URI=/git/trunk/
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (246)
+2014/06/23 02:22:36 [error] [php] require(C:\xampp\htdocs\git\trunk\protected\components\components/packages.php): failed to open stream: No such file or directory (C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php:260)
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php(214): Booster->includeAssets()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): Booster->init()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CWebApplication->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CWebApplication->__construct()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): createApplication()
+#6 C:\xampp\htdocs\git\trunk\index.php(13): createWebApplication()
+REQUEST_URI=/git/trunk/
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (246)
+2014/06/23 02:23:44 [error] [php] require(C:\xampp\htdocs\git\trunk\protected\components\components/packages.php): failed to open stream: No such file or directory (C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php:260)
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php(214): Booster->includeAssets()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): Booster->init()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CWebApplication->getComponent()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CWebApplication->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CWebApplication->__construct()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): createApplication()
+#6 C:\xampp\htdocs\git\trunk\index.php(13): createWebApplication()
+REQUEST_URI=/git/trunk/
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (260)
+in C:\xampp\htdocs\git\trunk\protected\components\booster\Booster.php (246)
+2014/06/23 02:34:45 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.textField" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(2529): CComponent->__get('textField')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'textField')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'textField', Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'textField', Array)
+#4 [internal function]: CActiveForm->textField(Object(LoginForm), 'textField', Array)
+#5 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(1293): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(1152): TbActiveForm->verticalGroup(Array, Object(LoginForm), 'textField', Array)
+#7 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(LoginForm), 'textField', Array)
+#8 C:\xampp\htdocs\git\trunk\protected\views\site\boosterLogin.php(12): TbActiveForm->textFieldGroup(Object(LoginForm), 'textField')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('boosterLogin', Array, true)
+#13 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(98): CController->render('boosterLogin', Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('login')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/login
+HTTP_REFERER=http://localhost/git/trunk/
+---
+2014/06/23 02:34:59 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.checkbox" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(2529): CComponent->__get('checkbox')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(1743): CHtml::resolveValue(Object(LoginForm), 'checkbox')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CActiveForm.php(831): CHtml::activeCheckBox(Object(LoginForm), 'checkbox', Array)
+#3 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(569): CActiveForm->checkBox(Object(LoginForm), 'checkbox', Array)
+#4 C:\xampp\htdocs\git\trunk\protected\views\site\boosterLogin.php(14): TbActiveForm->checkboxGroup(Object(LoginForm), 'checkbox')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('boosterLogin', Array, true)
+#9 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(98): CController->render('boosterLogin', Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/login
+HTTP_REFERER=http://localhost/git/trunk/
+---
+2014/06/23 02:54:25 [error] [exception.CException] exception 'CException' with message 'Alias "auth.AuthModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.AuthModule', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(282): YiiBase::createComponent('auth.AuthModule', 'auth', NULL, Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(337): CModule->getModule('auth')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(276): CWebApplication->createController('auth')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('auth')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+---
+2014/06/23 02:55:13 [error] [exception.CException] exception 'CException' with message 'Alias "booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.compone...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CModule->getComponent('booster')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\git\trunk\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+---
+2014/06/23 02:55:25 [error] [exception.CException] exception 'CException' with message 'Alias "booster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.compone...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CModule->getComponent('booster')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\git\trunk\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/git/trunk/index.php
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/login
+---
+2014/06/23 02:55:38 [error] [exception.CException] exception 'CException' with message 'Alias "auth.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.AuthWebUse...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/login
+---
+2014/06/23 02:56:25 [error] [exception.CException] exception 'CException' with message 'Alias "auth.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.AuthWebUse...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/login
+---
+2014/06/23 02:56:27 [error] [exception.CException] exception 'CException' with message 'Alias "auth.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.AuthWebUse...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/login
+---
+2014/06/23 02:57:07 [error] [exception.CException] exception 'CException' with message 'Alias "auth.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.AuthWebUse...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:00 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:00 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:01 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:01 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:01 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:01 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:04 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:08 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.admins" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\auth\CWebUser.php(160): CComponent->__set('admins', Array)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(220): CWebUser->__set('admins', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#4 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:14 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:43 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:44 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:44 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:44 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:45 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 02:58:45 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.AuthWebUser" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\views\layouts\main.php(35): CModule->__get('user')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\git\trunk\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php
+---
+2014/06/23 03:01:22 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php(20): CActiveDataProvider->__construct()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): AssignmentController->actionIndex()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): AssignmentController->runAction()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): AssignmentController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): AssignmentController->run()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=auth
+in C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/23 12:41:31 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php(20): CActiveDataProvider->__construct()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): AssignmentController->actionIndex()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): AssignmentController->runAction()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): AssignmentController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): AssignmentController->run()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=auth
+in C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/23 12:42:13 [error] [exception.CException] exception 'CException' with message 'Alias "auth.components.scsac" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('auth.components...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(209): CModule->getComponent('user')
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\AuthModule.php(116): CWebApplication->getUser()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('auth')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+---
+2014/06/23 12:42:17 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php(20): CActiveDataProvider->__construct()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): AssignmentController->actionIndex()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): AssignmentController->runAction()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): AssignmentController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): AssignmentController->run()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=auth
+in C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/23 13:08:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trunk.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/06/23 13:09:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{users}} SET create_at = FROM_UNIXTIME(createtime), lastvisit_at = IF(lastvisit,' at line 1. The SQL statement executed was: UPDATE {{users}} SET create_at = FROM_UNIXTIME(createtime), lastvisit_at = IF(lastvisit,FROM_UNIXTIME(lastvisit),'0000-00-00 00:00:00').
+2014/06/23 13:09:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'create_at'. The SQL statement executed was: ALTER TABLE `{{users}}` ADD `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP.
+2014/06/23 13:10:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'trunk.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/06/23 13:11:44 [error] [exception.CException] exception 'CException' with message 'WebUser component is not an instance of AuthWebUser.' in C:\xampp\htdocs\git\trunk\protected\modules\auth\AuthModule.php:125
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(263): AuthModule->beforeControllerAction(Object(AssignmentController), Object(CInlineAction))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('auth')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+---
+2014/06/23 13:14:03 [error] [php] include(AuthWebUser.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\modules\user\components\WebUser.php(4): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(427): include()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(302): autoload()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): import()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): createComponent()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(103): CWebApplication->getComponent()
+#6 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(12): CWebApplication->__get()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): LoginController->runAction()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): LoginController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): LoginController->run()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=user/login
+in C:\xampp\htdocs\git\trunk\protected\modules\user\components\WebUser.php (4)
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php (12)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/23 13:29:46 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(28): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:31:26 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(29): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:32:01 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(29): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:32:01 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(29): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:32:02 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(29): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:32:17 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(30): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:33:24 [error] [exception.CException] exception 'CException' with message 'LoginController cannot find the requested view "login".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(30): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:41:46 [error] [exception.CException] exception 'CException' with message 'Property "LoginController.title" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\main.php(126): CComponent->__get('title')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('????<h1>Login</...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('????<h1>Login</...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(28): CController->render('/user/login', Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:41:56 [error] [exception.CException] exception 'CException' with message 'Property "LoginController.title" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\main.php(126): CComponent->__get('title')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('????<h1>Login</...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('????<h1>Login</...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(28): CController->render('/user/login', Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 13:42:19 [error] [exception.CException] exception 'CException' with message 'Property "LoginController.title" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\column1.php(3): CComponent->__get('title')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(28): CController->render('/user/login', Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+---
+2014/06/23 14:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/index
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/23 14:15:35 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbGridView" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(AssignmentController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\views\assignment\index.php(33): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php(27): CController->render('index', Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): AssignmentController->actionIndex()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('auth')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/23 14:29:55 [error] [exception.CException] exception 'CException' with message 'Alias "booster.components.Boosters" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.compone...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(523): CModule->getComponent('booster')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(163): CModule->preloadComponents()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(125): CApplication->__construct('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\git\trunk\index.php(13): YiiBase::createWebApplication('C:\xampp\htdocs...')
+#7 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/23 14:29:58 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbGridView" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(AssignmentController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\git\trunk\protected\modules\auth\views\assignment\index.php(33): CBaseController->widget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\modules\auth\controllers\AssignmentController.php(27): CController->render('index', Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): AssignmentController->actionIndex()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('auth')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/git/trunk/index.php?r=auth
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/23 15:28:11 [error] [exception.CException] exception 'CException' with message 'Property "TbGridView.fixedHeader" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('fixedHeader', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(DefaultController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\protected\modules\user\views\user\index.php(51): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('/user/index', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\DefaultController.php(22): CController->render('/user/index', Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/
+---
+2014/06/23 15:38:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/index
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/user/view&id=1
+---
+2014/06/23 15:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/index
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/user/view&id=1
+---
