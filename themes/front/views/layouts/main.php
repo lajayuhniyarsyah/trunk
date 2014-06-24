@@ -6,29 +6,29 @@
       <title>Harxa Fashion Stylelist</title>
       <meta name="description" content=""/>
       <meta name="viewport" content="width=device-width"/>
-      <link rel="stylesheet" type="text/css" href="css/normalize.min.css"/>
-      <link rel="stylesheet" type="text/css" href="css/main.css"/>
-      <link rel="stylesheet" type="text/css" href="css/table.css"/> 
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>   
-      <link rel="stylesheet" type="text/css" href="css/media-queries.css"/>   
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-      <link rel="stylesheet" type="text/css" href="css/ui.totop.css" />
-      <link rel="stylesheet" type="text/css" href="js/colorbox/colorbox.css"/>
-      <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"/>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/normalize.min.css"/>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/main.css"/>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/table.css"/> 
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/style.css"/>   
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/media-queries.css"/>   
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/bootstrap.css"/>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/ui.totop.css" />
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/colorbox/colorbox.css"/>
+      <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/prettyPhoto.css" type="text/css" media="screen"/>
       <link rel="shortcut icon" href="img/favicons/logo32.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/logo114.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/logo.png"/>
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/logo57.png"/>
-      <script type="text/javascript" src="js/vendor/jquery-1.7.1.min.js"></script>
-      <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
-      <script type="text/javascript" src="js/vendor/modernizr-2.6.1.min.js"></script>
-      <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-      <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
-      <script type="text/javascript" src="js/cloud_zoom.js"></script>
-      <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-      <script src="js/hover-image.js" type="text/javascript"></script>    
-      <script src="js/jquery.bxSlider.js" type="text/javascript"></script>
-      <script type="text/javascript" src="js/custom.js"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo.png"/>
+    <link rel="apple-touch-icon-precomposed" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo57.png"/>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/vendor/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.easing.1.3.js" ></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/vendor/modernizr-2.6.1.min.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.jcarousel.min.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/colorbox/jquery.colorbox-min.js"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/cloud_zoom.js"></script>
+      <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.prettyPhoto.js" type="text/javascript"></script>
+      <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/hover-image.js" type="text/javascript"></script>    
+      <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.bxSlider.js" type="text/javascript"></script>
+      <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/custom.js"></script>
       <script type="text/javascript">
         $(document).ready(function () {
             $("a[data-gal^='prettyPhoto']").prettyPhoto({
@@ -110,11 +110,11 @@
           <div class="row">
             <ul class="main-menu clearfix rr" id="main-menu">
               <li style="border-left: 1px solid #d6d6d6;"><a href="index.php" class="current">Home</a></li>
-              <li><a href="index.php?page=profile">About Us</a></li>
-              <li><a href="index.php?page=product">Products</a></li>
-              <li><a href="index.php?page=truckshow">Truck Show</a></li>
-              <li><a href="index.php?page=gallery">Gallery</a></li>
-              <li style="border-right: 1px solid #d6d6d6;"><a href="index.php?page=contact">Contact Us</a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'profile')); ?>">About Us</a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'product')); ?>">Products</a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'truckshow')); ?>">Truck Show</a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'gallery')); ?>">Gallery</a></li>
+              <li style="border-right: 1px solid #d6d6d6;"><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'contact')); ?>">Contact Us</a></li>
             </ul>
           </div>         
           <!--<div class="span3">
@@ -125,32 +125,7 @@
       </header>
     <div style="border-top: 1px solid #ccc; padding-bottom: 5px;"></div>
       <?php
-        if(isset($_GET['page'])){
-            $page=$_GET['page'];
-                if($page=='profile'){
-                    //include "content/profile.php";
-                }else if($page=='product'){
-                    //include "content/product.php";
-                }else if($page=='truckshow'){
-                     //include "content/truckshow.php";
-                }else if($page=='gallery'){
-                     //include "content/gallery.php";
-                }else if($page=='contact'){
-                     //include "content/contact.php";
-                }else if($page=='productdetail'){
-                    //include "content/productdetail.php";
-                }else if($page=='cart'){
-                    //include "content/cart.php";
-                }else if($page=='checkout'){
-                    //include "content/checkout.php";
-                }else if($page=='login'){
-                     //include "content/login.php";
-                }else if($page=='register'){
-                    //include "content/register.php";
-                }
-        }else{
-                //include "content/home.php";
-        }
+        echo $content;
       ?>
       <footer>
         <div class="top">
@@ -169,22 +144,22 @@
               <div class="span6 clearfix social-wrapper">
                    <div class="social"> 
                    <a target="_blank" href="http://facebook.com/harnishdesign">
-                        <img title="Facebook" alt="Facebook" src="img/social/facebook.png"/>
+                        <img title="Facebook" alt="Facebook" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/facebook.png"/>
                    </a>
                    <a target="_blank" href="https://twitter.com/#!/harnishdesign">
-                        <img title="Twitter" alt="Twitter" src="img/social/twitter.png"/>
+                        <img title="Twitter" alt="Twitter" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/twitter.png"/>
                    </a>
                    <a target="_blank" href="#"> 
-                        <img title="Google+" alt="Google+" src="img/social/googleplus.png"> 
+                        <img title="Google+" alt="Google+" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/googleplus.png"> 
                    </a> 
                    <a target="_blank" href="#"> 
-                        <img title="Pinterest" alt="Pinterest" src="img/social/pinterest.png">
+                        <img title="Pinterest" alt="Pinterest" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/pinterest.png">
                    </a> 
                     <a target="_blank" href="http://www.vimeo.com/#"> 
-                        <img title="Instagram" alt="Instagram" src="img/social/instagram.png"> 
+                        <img title="Instagram" alt="Instagram" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/instagram.png"> 
                    </a> 
                    <a target="_blank" href="#"> 
-                        <img title="RSS" alt="RSS" src="img/social/rss.png"> 
+                        <img title="RSS" alt="RSS" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/social/rss.png"> 
                    </a> 
                   
                    </div>
@@ -264,10 +239,10 @@
         </div>
       </footer>
     
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.totop.js" ></script>
+        <script>window.jQuery || document.write('<script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/plugins.js"></script>
+        <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/main.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.ui.totop.js" ></script>
         <script type="text/javascript">
             $(document).ready(function() {
              $().UItoTop({ easingType: 'easeOutQuart' });
