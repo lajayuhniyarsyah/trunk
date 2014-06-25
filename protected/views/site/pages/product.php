@@ -22,7 +22,7 @@
             <div class="featured clearfix hidden-phone">
               <span class="corner-badge hot-right ir">Hot</span>
               <figure>
-                <img src="img/ph/ph-featured-1.png" alt=""/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-featured-1.png" alt=""/>
               </figure>
               <div class="content">
                 <a href="#"><h1 class="featured-title">New trend for men 2012</h1></a>
@@ -50,13 +50,13 @@
                 <?php
                     if($i % 2==0){
                 ?>
-                  <img src="img/ph/ph-home-big-1.png" class="desat-ie" alt=""/>
+                  <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-home-big-1.png" class="desat-ie" alt=""/>
                  <?php      
                     }else if($i % 3==0){
                 ?>
-                <img src="img/ph/ph-home-big-2.png" class="desat-ie" alt=""/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-home-big-2.png" class="desat-ie" alt=""/>
                 <?php }else { ?>
-                <img src="img/ph/ph-home-big-3.png" class="desat-ie" alt=""/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-home-big-3.png" class="desat-ie" alt=""/>
                 <?php } ?>
               </a>
             <span class="status stylestatus">
@@ -107,7 +107,8 @@
           </ul>
             
             <?php
-                include "content/productlist.php";
+              echo $this->renderPartial('page/productlist');
+                //include "content/productlist.php";
             ?>
             <div class="products-view-nav row bottom">
             

@@ -5,7 +5,7 @@
               <div class="span3 desat photo-wrapper">
                 <span class="badge corner-badge off-35 ir">35% off</span>
                 <a href="index.php?page=productdetail">
-                  <img src="img/ph/ph-home-big-1.png" alt=""/>
+                  <img src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/ph/ph-home-big-1.png" alt=""/>
                 </a>
               </div>
               <div class="span9 info clearfix">

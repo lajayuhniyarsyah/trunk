@@ -20,8 +20,8 @@
         <ul class="row-fluid clearfix rr grid-display">
             <?php for($i=1; $i<=9; $i++){ ?>
                 <li class="span4 alpha33 desat">
-                <a data-gal="prettyPhoto[prettyPhoto]" href="img/ph/ph-home-big-2.png" class="lightbox-image">
-                    <img src="img/ph/ph-home-big-2.png" class="desat-ie" alt=""/>
+                <a data-gal="prettyPhoto[prettyPhoto]" href="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-home-big-2.png" class="lightbox-image">
+                    <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-home-big-2.png" class="desat-ie" alt=""/>
                   </a>
                   <div class="judulalbum">Beef Spices Blend</div>
                 </li>

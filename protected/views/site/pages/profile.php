@@ -26,13 +26,13 @@
 		<div class="row">
             <ul class="row-fluid clearfix rr grid-display">
                 <li class="span4 alpha33 desat">
-                   <img src="image/profile/banner1.jpg" class="desat-ie" alt=""/>
+                   <img src="<?php echo yii::app()->theme->baseUrl.'/assets'; ?>/image/profile/banner1.jpg" class="desat-ie" alt=""/>
                 </li>
                 <li class="span4 alpha33 desat">
-                   <img src="image/profile/banner2.jpg" class="desat-ie" alt=""/>
+                   <img src="<?php echo yii::app()->theme->baseUrl.'/assets'; ?>/image/profile/banner2.jpg" class="desat-ie" alt=""/>
                 </li>
                 <li class="span4 alpha33 desat">
-                   <img src="image/profile/banner3.jpg" class="desat-ie" alt=""/>
+                   <img src="<?php echo yii::app()->theme->baseUrl.'/assets'; ?>/image/profile/banner3.jpg" class="desat-ie" alt=""/>
                 </li>
         </ul>
 		</div>
