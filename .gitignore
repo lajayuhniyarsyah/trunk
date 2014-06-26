@@ -6,7 +6,7 @@
 .project
 .metadata
 /assets/
-/protected/runtime/application.log
+*.log
 bin/
 tmp/
 *.tmp
@@ -215,3 +215,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.log
