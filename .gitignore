@@ -6,7 +6,7 @@
 .project
 .metadata
 /assets/
-/protected/runtime/
+/protected/runtime/application.log
 bin/
 tmp/
 *.tmp
