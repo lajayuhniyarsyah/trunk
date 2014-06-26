@@ -107,7 +107,7 @@
           </ul>
             
             <?php
-              echo $this->renderPartial('page/productlist');
+              echo $this->renderPartial('/site/pages/productlist');
                 //include "content/productlist.php";
             ?>
             <div class="products-view-nav row bottom">
