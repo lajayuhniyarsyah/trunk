@@ -1191,3 +1191,353 @@ REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/06/24 17:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "poductlist" was not found.' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('poductlist')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=poductlist
+---
+2014/06/24 17:15:40 [error] [php] include(content/productlist.php): failed to open stream: No such file or directory (C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php:110)
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): SiteController->render()
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CViewAction->runWithParams()
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/06/25 22:13:44 [error] [php] include(content/productlist.php): failed to open stream: No such file or directory (C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php:110)
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): SiteController->renderFile()
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): SiteController->renderPartial()
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): SiteController->render()
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CViewAction->runWithParams()
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/06/25 22:15:02 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "content/productlist.".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('content/product...', NULL, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->render('content/product...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=profile
+---
+2014/06/25 22:15:11 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist.".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('productlist.', NULL, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->render('productlist.')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=profile
+---
+2014/06/25 22:15:22 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('productlist', NULL, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->render('productlist')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=profile
+---
+2014/06/25 22:22:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('productlist', NULL, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->render('productlist')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#13 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:24:14 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('productlist')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:24:15 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('productlist')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:24:15 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('productlist')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:24:21 [error] [php] Undefined variable: model (C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php:110)
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): SiteController->render()
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CViewAction->runWithParams()
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php (110)
+in C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/06/25 22:24:46 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('productlist', true, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:24:59 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "content/productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('content/product...', true, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=cart
+---
+2014/06/25 22:25:30 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "content/productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('content/product...', true, true)
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=productlist
+---
+2014/06/25 22:25:47 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "content/productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('content/product...')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=productlist
+---
+2014/06/25 22:25:48 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "content/productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('content/product...')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=productlist
+---
+2014/06/25 22:26:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "page/productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('page/productlis...')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=site/page&view=productlist
+---
+2014/06/26 08:39:21 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "productlist".' in C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\site\pages\product.php(110): CController->renderPartial('productlist')
+#1 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\Program File...')
+#2 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Program File...', NULL, true)
+#3 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\Program File...', NULL, true)
+#4 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('pages/product', NULL, true)
+#5 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CViewAction.php(140): CController->render('pages/product')
+#6 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\Program Files\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=site/page&view=product
+HTTP_REFERER=http://localhost/git/trunk/
+---
