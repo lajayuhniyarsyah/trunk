@@ -67,7 +67,8 @@ class TbEditableDetailView extends CDetailView
             //options to be passed into TbEditableField (constructed from $options['editable'])
             $widgetOptions = array(
                 'model'     => $this->data,
-                'attribute' => $options['name']
+                'attribute' => $options['name'],
+                
             );
 
             //if value in detailview options provided, set text directly (as value here means text)
@@ -79,6 +80,9 @@ class TbEditableDetailView extends CDetailView
             $widgetOptions = CMap::mergeArray($widgetOptions, $options['editable']);
 
             $widget = $this->controller->createWidget('TbEditableField', $widgetOptions);
+           /* echo '<pre>';
+            var_dump($widgetOptions);
+            echo '</pre>';*/
 
             //'apply' maybe changed during init of widget (e.g. if related model has unsafe attribute)
             if($widget->apply) {

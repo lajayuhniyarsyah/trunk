@@ -84,6 +84,7 @@ class TbEditableField extends TbEditable
         /*
          try to detect type from metadata if not set
         */
+
         if ($this->type === null) {
             $this->type = 'text';
             if (!$isMongo && !$isFormModel && array_key_exists($this->attribute, $staticModel->tableSchema->columns)) {
@@ -99,6 +100,7 @@ class TbEditableField extends TbEditable
                 }
             }
         }
+
 
         //name
         if(empty($this->name)) {

@@ -1158,3 +1158,227 @@ REQUEST_URI=/git/trunk/
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\themes\front\views\layouts\main.php (152)
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\themes\front\views\layouts\main.php (152)
 in C:\Program Files\Zend\Apache2\htdocs\git\trunk\protected\views\layouts\column1.php (6)
+2014/06/24 13:10:36 [error] [php] Undefined variable: endpoint (C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php:94)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProfileController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProfileController->renderPartial()
+#2 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProfileController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProfileController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProfileController->run()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+in C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php (94)
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (21)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 13:13:40 [error] [exception.CException] exception 'CException' with message 'Unknown type "textarea".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\utils\CFormatter.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CDetailView.php(218): CFormatter->format('admin', 'textarea')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): CDetailView->run()
+#2 C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php(90): CBaseController->widget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('profile', Array, true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/24 13:15:48 [error] [php] call_user_func() expects parameter 1 to be a valid callback, array must have exactly two members (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php:2143)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbEditableField->init()
+#1 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableDetailView.php(81): ProfileController->createWidget()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CDetailView.php(220): TbEditableDetailView->renderItem()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): TbEditableDetailView->run()
+#4 C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php(90): ProfileController->widget()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): ProfileController->renderInternal()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProfileController->renderFile()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProfileController->renderPartial()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProfileController->runAction()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProfileController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProfileController->run()
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableField.php (52)
+in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableDetailView.php (81)
+in C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php (90)
+2014/06/24 13:29:09 [error] [exception.CException] exception 'CException' with message 'Property "data" should be of CModel class.' in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableDetailView.php:42
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbEditableDetailView->init()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#2 C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php(92): CBaseController->widget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('profile', Array, true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/24 13:29:16 [error] [exception.CException] exception 'CException' with message 'Property "TbEditableField.data" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('data', Object(User))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProfileController), 'TbEditableField', Array)
+#2 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableDetailView.php(81): CBaseController->createWidget('TbEditableField', Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CDetailView.php(220): TbEditableDetailView->renderItem(Array, Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): CDetailView->run()
+#5 C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php(92): CBaseController->widget('booster.widgets...', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('profile', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/06/24 14:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/user/updat...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/user/update
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/profile
+---
+2014/06/24 14:19:53 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:19:53 [warning] [application] Failed to set unsafe attribute "value" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:19:53 [warning] [application] Failed to set unsafe attribute "pk" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:19:53 [warning] [application] Failed to set unsafe attribute "scenario" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:21:40 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:21:40 [warning] [application] Failed to set unsafe attribute "value" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:21:40 [warning] [application] Failed to set unsafe attribute "pk" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:21:40 [warning] [application] Failed to set unsafe attribute "scenario" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:10 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:10 [warning] [application] Failed to set unsafe attribute "value" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:10 [warning] [application] Failed to set unsafe attribute "pk" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:10 [warning] [application] Failed to set unsafe attribute "scenario" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:46 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:46 [warning] [application] Failed to set unsafe attribute "value" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:46 [warning] [application] Failed to set unsafe attribute "pk" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:22:46 [warning] [application] Failed to set unsafe attribute "scenario" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:23:11 [warning] [application] Failed to set unsafe attribute "name" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:23:11 [warning] [application] Failed to set unsafe attribute "value" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:23:11 [warning] [application] Failed to set unsafe attribute "pk" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:23:11 [warning] [application] Failed to set unsafe attribute "scenario" of "User".
+in C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php (20)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/06/24 14:29:26 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(161): CComponent->__set('name', 'email')
+#1 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(21): CActiveRecord->__set('name', 'email')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/profile
+---
+2014/06/24 14:47:35 [error] [exception.CException] exception 'CException' with message 'Property "User.Profile" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Profile')
+#1 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableField.php(203): CActiveRecord->__get('Profile')
+#2 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableField.php(62): TbEditableField::resolveModels(Object(User), 'Profile.first_n...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbEditableField->init()
+#4 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbEditableDetailView.php(82): CBaseController->createWidget('TbEditableField', Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CDetailView.php(220): TbEditableDetailView->renderItem(Array, Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): CDetailView->run()
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\views\profile\profile.php(17): CBaseController->widget('booster.widgets...', Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('profile', Array, true)
+#12 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(30): CController->render('profile', Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/user
+---

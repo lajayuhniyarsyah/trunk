@@ -14,11 +14,14 @@ class LoginController extends Controller
 			// collect user input data
 			if(isset($_POST['UserLogin']))
 			{
+				// echo Yii::app()->user->returnUrl;
+				// die('aa');
 				$model->attributes=$_POST['UserLogin'];
 				// validate user input and redirect to previous page if valid
 				if($model->validate()) {
 					$this->lastViset();
-					if (Yii::app()->user->returnUrl=='/index.php')
+					// if (Yii::app()->user->returnUrl=='/index.php')
+					if(preg_match('/\/index\.php/', Yii::app()->user->returnUrl))
 						$this->redirect(Yii::app()->controller->module->returnUrl);
 					else
 						$this->redirect(Yii::app()->user->returnUrl);

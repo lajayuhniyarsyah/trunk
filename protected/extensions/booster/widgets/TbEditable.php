@@ -353,6 +353,7 @@ class TbEditable extends CWidget
         //and do not fill element contents
         if ($this->_prepareToAutotext) {
             //for date we use 'format' to put it into value (if text not defined)
+
             if ($this->type == 'date' || $this->type == 'datetime') {
                 //if date comes as object OR timestamp, format it to string
                 if($this->value instanceOf DateTime || is_long($this->value) || (is_string($this->value) && ctype_digit($this->value))) {
@@ -459,6 +460,8 @@ class TbEditable extends CWidget
             }
         }
 
+
+
         if ($this->source) {
             //if source is array --> convert it to x-editable format.
             //Since 1.1.0 source as array with one element is NOT treated as Yii route!
@@ -517,6 +520,7 @@ class TbEditable extends CWidget
         //apply editable
         $options = CJavaScript::encode($this->options);
         $script .= ".editable($options);";
+        
 
         //wrap in anonymous function for live update
         if($this->liveTarget) {

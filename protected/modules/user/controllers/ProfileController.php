@@ -15,6 +15,15 @@ class ProfileController extends Controller
 	public function actionProfile()
 	{
 		$model = $this->loadUser();
+		if(Yii::app()->request->isAjaxRequest && isset($_POST['scenario']))
+		{
+			
+			$model->{$_POST['name']}=$_POST['value'];
+			$model->save();
+			Yii::app()->user->updateSession();
+			Yii::app()->end();
+		}
+
 	    $this->render('profile',array(
 	    	'model'=>$model,
 			'profile'=>$model->profile,
