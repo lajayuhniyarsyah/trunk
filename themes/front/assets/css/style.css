@@ -143,3 +143,74 @@ body {
      width: 100%;
      height: 300px;
 }
+.red{
+  color: red;
+}
+input:focus{
+  outline-offset: -2px;
+   box-shadow: 0 0 0 1px rgba(51, 153, 255, 1) inset, 0 2px 5px rgba(0, 0, 0, 0.35) inset, 0 1px 1px rgba(255, 255, 255, 0.5), 0 0 5px rgba(51, 153, 255, 0.75);
+
+}
+input[type="checkbox"], input[type="radio"]{
+  width: 10px !important;
+  height: 0px !important;
+  margin-left: 10px;
+}
+.select-menu-main, .select-menu-top {
+  background: none repeat scroll 0 0 #c6c6c6;
+  color: #757575;
+  display: block;
+  font-size: 0.688em;
+  line-height: 2.182em;
+  padding: 0 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.checkout .checkout-list .left-account {
+  width: 65%;
+  line-height: 2.5em;
+    margin-right: 10px;
+     float: left;
+}
+.right-account {
+  width: 30%;
+  float: left;
+   line-height: 2.5em;
+    margin-right: 10px;
+}
+.right-account img{
+border-radius: 160px;
+width: 80%;
+float: right;
+}
+
+.inputtext{
+  background: none repeat scroll 0 0 #eee;
+border: 1px solid #e2e2e2;
+color: #989898;
+font-family: 'PT Serif',serif;
+font-size: 11px;
+font-style: italic;
+height: 2.8em;
+line-height: 2.8em;
+padding: 1px 10px 0;
+width: 240px;
+}
+.btn.secondary span{
+  width: 95%;
+}
+.btn {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #cfcfc7;
+  color: #fff;
+  display: inline-block;
+  font-family: 'PT Serif',serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 37px;
+  margin-top: 30px;
+  padding: 2px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #b4b4ad;
+  text-transform: uppercase;
+}

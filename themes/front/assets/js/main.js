@@ -133,12 +133,12 @@ $(function() {
   // transform menus in selects for mobile  
   
   $('.top-bar .menu ul').mobileMenu({
-    defaultText: 'Navigate to...',
+    defaultText: 'Select Menu...',
     className: 'select-menu-top',
     subMenuDash: '&ndash;'
   });
   $('.main-menu').mobileMenu({
-    defaultText: 'Navigate to...',
+    defaultText: 'Select Menu...',
     className: 'select-menu-main',
     subMenuDash: '&ndash;'
   });  

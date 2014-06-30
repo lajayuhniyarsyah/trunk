@@ -1854,7 +1854,7 @@ font-weight: bold;
   margin-bottom: 10px;
 }
 .checkout .checkout-list .full-col input {
-  width: 240px;
+  width: 65%;
   border: 1px solid #e2e2e2;
   background: #eee;
   font-size: 11px;

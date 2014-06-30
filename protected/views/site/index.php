@@ -23,7 +23,7 @@
                 <li class="slide-2">
                   <div class="slide">
                     <figure>
-                      <img src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/ph/ph-home-banner-2.png" alt=""/>
+                        <a rel="#voverlay"   href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>engine/swf/player.swf?url=<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>data/video/time.FLV&volume=100"><img src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/ph/ph-home-banner-2.png" alt=""/></a>
                     </figure>
                     <div class="content-wrapper">
                       <div class="content">
@@ -73,7 +73,21 @@
             </div>
           </div>
         </div>
-        
+        <?php
+        Yii::app()->clientScript->registerScript('sliderTime','
+          
+        ');
+        ?>
+        <script type="text/javascript">
+        function nextSlideShow(){
+          console.log('11111');
+        }
+        jQuery(function(){
+          var cur = 0;
+
+          setTimeout('nextSlideShow()',1000);
+        });
+        </script>
         <div class="slideshow-bottom">
           <div class="menu-gradient gradient">Gradient</div>
           <div class="menu-wrapper">

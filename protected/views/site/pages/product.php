@@ -18,7 +18,7 @@
         <div class="row">
         
           <div class="span12">
-            
+            <h2>Products</h2>
             <div class="featured clearfix hidden-phone">
               <span class="corner-badge hot-right ir">Hot</span>
               <figure>
@@ -46,7 +46,7 @@
           <li class="span3 alpha33">
             <div class="prod-wrapper">
               <span class="badge corner-badge hot ir hidden">Hot</span>
-              <a href="index.php?page=productdetail">
+              <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'productdetail')); ?>">
                 <?php
                     if($i % 2==0){
                 ?>

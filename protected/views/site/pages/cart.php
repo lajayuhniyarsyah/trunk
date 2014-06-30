@@ -15,7 +15,7 @@
 </div>
 </div>      
       <div role="main" class="container cart">
-        
+        <h2>YOUR SHOPPING CART</h2>
         <table>
           <tr class="headers">
             <th class="alpha50 dark">
@@ -30,12 +30,15 @@
             <th class="alpha16">
               Price
             </th>
+            <th class="alpha16 dark">
+              Action
+            </th>
           </tr>
           <tr>
             <td class="article clearfix">
               
               <figure>
-                <img src="img/ph/ph-also-1.png" alt=""/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-also-1.png" alt=""/>
               </figure>
               
               <div class="info-wrapper">
@@ -43,11 +46,7 @@
                 <div class="info">
                   <p class="clearfix">
                     <span>Size:</span>
-                    <span class="value">12</span>
-                  </p>
-                  <p class="clearfix">
-                    <span>Colour:</span>
-                    <span class="colour orange">Orange</span>
+                    <span class="value">M</span>
                   </p>
                 </div>
               </div>
@@ -66,12 +65,17 @@
             </td>
             <td class="price">
             
-              <span class="currency">$</span><span class="value">300</span>
+              <span class="currency">Rp.</span><span class="value">1.500.000</span>
             
             </td>
             <td class="price dark">
             
-              <span class="currency">$</span><span class="value">600</span>
+              <span class="currency">Rp.</span><span class="value">1.500.000</span>
+            
+            </td>
+            <td class="action">
+            
+              <a href="#" class="delete">Delete</a>
             
             </td>
           </tr>
@@ -79,7 +83,7 @@
             <td class="article clearfix">
               
               <figure>
-                <img src="img/ph/ph-also-3.png" alt=""/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-also-3.png" alt=""/>
               </figure>
               
               <div class="info-wrapper">
@@ -87,11 +91,7 @@
                 <div class="info">
                   <p class="clearfix">
                     <span>Size:</span>
-                    <span class="value">10</span>
-                  </p>
-                  <p class="clearfix">
-                    <span>Colour:</span>
-                    <span class="colour black">Black</span>
+                    <span class="value">L</span>
                   </p>
                 </div>
               </div>
@@ -110,42 +110,21 @@
             </td>
             <td class="price">
             
-              <span class="currency">$</span><span class="value">200</span>
+              <span class="currency">Rp.</span><span class="value">1.000.000</span>
             
             </td>
             <td class="price dark">
             
-              <span class="currency">$</span><span class="value">200</span>
+              <span class="currency">Rp.</span><span class="value">1.000.000</span>
+            
+            </td>
+             <td class="action">
+            
+              <a href="#" class="delete">Delete</a>
             
             </td>
           </tr>
-          <tr>
-            <td colspan="2" class="empty">
-            </td>
-            <td colspan="2" class="total-wrapper">
-            
-              <div class="vat clearfix">
-                <div class="half-col">
-                  VAT
-                </div>
-                <div class="half-col">
-                  <span class="value">10</span>%
-                </div>
-              </div>
-              
-              <div class="total clearfix">
-                <div class="half-col">
-                  Total
-                </div>
-                <div class="half-col value-wrapper">
-                  
-                  <span class="currency">$</span><span class="value">880</span>
-                  
-                </div>
-              </div>
-            
-            </td>
-          </tr>
+         
         </table>
         
         <div class="row-fluid checkout">

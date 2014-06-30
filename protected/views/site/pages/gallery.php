@@ -17,6 +17,7 @@
 </div>
 <div class="row">
     <div class="span12">
+    <h2>Gallery</h2>
         <ul class="row-fluid clearfix rr grid-display">
             <?php for($i=1; $i<=9; $i++){ ?>
                 <li class="span4 alpha33 desat">

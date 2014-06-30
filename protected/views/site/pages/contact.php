@@ -22,7 +22,7 @@
             <figure class="map">
               <div class="wrapper">
                 <div class="shadow">Shadow</div>
-                <img src="img/ph/ph-map.png" alt="Map"/>
+                <img src="<?php echo yii::app()->theme->baseUrl.'/assets/' ?>img/ph/ph-map.png" alt="Map"/>
               </div>
             </figure>
           </div>

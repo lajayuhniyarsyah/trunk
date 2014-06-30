@@ -14,8 +14,8 @@
       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/bootstrap.css"/>
       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/ui.totop.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/colorbox/colorbox.css"/>
-      <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/prettyPhoto.css" type="text/css" media="screen"/>
-      <link rel="shortcut icon" href="img/favicons/logo32.png"/>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>css/prettyPhoto.css" type="text/css" media="screen"/>
+     <link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo32.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo114.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo.png"/>
     <link rel="apple-touch-icon-precomposed" href="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/favicons/logo57.png"/>
@@ -29,12 +29,17 @@
       <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/hover-image.js" type="text/javascript"></script>    
       <script src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/jquery.bxSlider.js" type="text/javascript"></script>
       <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>js/custom.js"></script>
-      <script type="text/javascript">
+         <script type="text/javascript">
         $(document).ready(function () {
             $("a[data-gal^='prettyPhoto']").prettyPhoto({
                 theme: 'facebook'
             });
         });
+
+        function onYouTubePlayerReady(playerId) { 
+          ytplayer = document.getElementById("video_overlay"); 
+          ytplayer.setVolume(100); 
+        } 
       </script> 
     </head>
     <body>
@@ -58,13 +63,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="index.php?page=checkout">
+                  <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'checkout')); ?>">
                     <span class="ir icon checkout"></span>
                     <span>Checkout</span>
                   </a>
                 </li>
                 <li>
-                  <a href="index.php?page=login">
+                  <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'login')); ?>">
                     <span class="ir icon log-in"></span>
                     <span>Log in</span>
                   </a>
@@ -99,7 +104,7 @@
           <div class="span4">
             <div class="shopping-cart">
               <span class="icon ir">Cart</span>
-              <span class="text"><a href="index.php?page=cart"><span class="title">Shopping Cart</span></a> (<span>0</span> items) - </span>
+              <span class="text"><a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'cart')); ?>"><span class="title">Shopping Cart</span></a> (<span>0</span> items) - </span>
               <span class="price"><span>$</span><span>0.00</span></span>
             </div>
           </div>
