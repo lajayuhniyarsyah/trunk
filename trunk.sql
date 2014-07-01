@@ -3,12 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2014 at 04:54 AM
+-- Generation Time: Jul 01, 2014 at 11:13 AM
 -- Server version: 5.5.27-log
 -- PHP Version: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+07:00";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -51,6 +51,9 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
+  `birth_place` varchar(255) NOT NULL DEFAULT '',
+  `birth_date` date NOT NULL DEFAULT '0000-00-00',
+  `photo` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
@@ -58,9 +61,9 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles` (
 -- Dumping data for table `tbl_profiles`
 --
 
-INSERT INTO `tbl_profiles` (`user_id`, `first_name`, `last_name`) VALUES
-(1, 'Administrator', 'Admin'),
-(2, 'Test', 'Satu');
+INSERT INTO `tbl_profiles` (`user_id`, `first_name`, `last_name`, `birth_place`, `birth_date`, `photo`) VALUES
+(1, 'Administrator', 'Admin', '', '0000-00-00', ''),
+(2, 'Test', 'Satu', '', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -86,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles_fields` (
   `position` int(3) NOT NULL DEFAULT '0',
   `visible` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `tbl_profiles_fields`
@@ -94,7 +97,10 @@ CREATE TABLE IF NOT EXISTS `tbl_profiles_fields` (
 
 INSERT INTO `tbl_profiles_fields` (`id`, `varname`, `title`, `field_type`, `field_size`, `field_size_min`, `required`, `match`, `range`, `error_message`, `other_validator`, `default`, `widget`, `widgetparams`, `position`, `visible`) VALUES
 (1, 'first_name', 'First Name', 'VARCHAR', 255, 3, 2, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 1, 3),
-(2, 'last_name', 'Last Name', 'VARCHAR', 255, 3, 2, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 2, 3);
+(2, 'last_name', 'Last Name', 'VARCHAR', 255, 3, 2, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 2, 3),
+(3, 'birth_place', 'Birth Place', 'VARCHAR', 255, 0, 0, '', '', '', '', '', '', '', 0, 3),
+(4, 'birth_date', 'Birth Date', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', '', '', 0, 3),
+(5, 'photo', 'Photo', 'VARCHAR', 255, 3, 2, '/(jpg|png|gif|jpeg|JPG|JPEG)/', '', '', '', '', '', '', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -122,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `superuser`, `status`, `create_at`, `lastvisit_at`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9fb43cc47977f3a77d6136819956bcf2', 1, 1, '2014-06-23 11:10:58', '2014-06-23 19:48:00'),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@myweb.com', '9fb43cc47977f3a77d6136819956bcf2', 1, 1, '2014-06-23 11:10:58', '2014-07-01 00:48:43'),
 (2, 'test', '098f6bcd4621d373cade4e832627b4f6', 'test@mail.com', 'e5eda9d15d00b743b0abd373582fc042', 0, 1, '2014-06-23 08:03:28', '0000-00-00 00:00:00'),
 (4, 'test2', '098f6bcd4621d373cade4e832627b4f6', 'test2@mail.com', 'e5eda9d15d00b743b0abd373582fc042', 0, 1, '2014-06-23 08:03:28', '0000-00-00 00:00:00');
 
