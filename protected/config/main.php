@@ -9,7 +9,7 @@ Yii::setPathOfAlias('auth',dirname(__FILE__) . DIRECTORY_SEPARATOR . '../modules
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-	'theme'=>'front',
+	'theme'=>'classic',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -61,14 +61,14 @@ return array(
             'returnLogoutUrl' => array('/user/login'),
         ),
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'a',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -110,13 +110,21 @@ return array(
 		
 		// uncomment the following to use a MySQL database
 		
-		'db'=>array(
+		/*'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=trunk',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
+		),*/
+		'db'=>array(
+			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=trunk',
+			'emulatePrepare' => true,
+			'username' => 'trunk_usr',
+			'password' => 'harxa',
+			'charset' => 'utf8',
+			'tablePrefix'=>'tbl_',
 		),
 		
 		'errorHandler'=>array(

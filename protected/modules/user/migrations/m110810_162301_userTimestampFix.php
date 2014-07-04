@@ -29,7 +29,7 @@ class m110810_162301_userTimestampFix extends CDbMigration
             default:
                     $this->addColumn(Yii::app()->getModule('user')->tableUsers,'create_at',"TIMESTAMP");
                     $this->addColumn(Yii::app()->getModule('user')->tableUsers,'lastvisit_at',"TIMESTAMP");
-                    $this->execute("UPDATE ".Yii::app()->getModule('user')->tableUsers." SET create_at = datetime(createtime, 'unixepoch'), lastvisit_at = datetime(lastvisit, 'unixepoch')");
+                    $this->execute("UPDATE ".Yii::app()->getModule('user')->tableUsers." SET create_at = now(), lastvisit_at = now()");
                     $this->execute('ALTER TABLE "'.Yii::app()->getModule('user')->tableUsers.'" RENAME TO "'.__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers.'"');
                     $this->createTable(Yii::app()->getModule('user')->tableUsers, array(
                         "id" => "pk",
@@ -37,8 +37,8 @@ class m110810_162301_userTimestampFix extends CDbMigration
                         "password" => "varchar(128) NOT NULL",
                         "email" => "varchar(128) NOT NULL",
                         "activkey" => "varchar(128) NOT NULL",
-                        "superuser" => "int(1) NOT NULL",
-                        "status" => "int(1) NOT NULL",
+                        "superuser" => "integer NOT NULL",
+                        "status" => "integer NOT NULL",
                         "create_at" => "TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP",
                         "lastvisit_at" => "TIMESTAMP",
                     ));
@@ -61,8 +61,8 @@ class m110810_162301_userTimestampFix extends CDbMigration
                 break;
             case "sqlite":
             default:
-                $this->addColumn(Yii::app()->getModule('user')->tableUsers,'createtime',"int(10)");
-                $this->addColumn(Yii::app()->getModule('user')->tableUsers,'lastvisit',"int(10)");
+                $this->addColumn(Yii::app()->getModule('user')->tableUsers,'createtime',"integer");
+                $this->addColumn(Yii::app()->getModule('user')->tableUsers,'lastvisit',"integer");
                 $this->execute("UPDATE ".Yii::app()->getModule('user')->tableUsers." SET createtime = strftime('%s',create_at), lastvisit = strftime('%s',lastvisit_at)");
                 $this->execute('ALTER TABLE "'.Yii::app()->getModule('user')->tableUsers.'" RENAME TO "'.__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers.'"');
                 $this->createTable(Yii::app()->getModule('user')->tableUsers, array(
@@ -71,10 +71,10 @@ class m110810_162301_userTimestampFix extends CDbMigration
                     "password" => "varchar(128) NOT NULL",
                     "email" => "varchar(128) NOT NULL",
                     "activkey" => "varchar(128) NOT NULL",
-                    "createtime" => "int(10) NOT NULL",
-                    "lastvisit" => "int(10) NOT NULL",
-                    "superuser" => "int(1) NOT NULL",
-                    "status" => "int(1) NOT NULL",
+                    "createtime" => "integer NOT NULL",
+                    "lastvisit" => "integer NOT NULL",
+                    "superuser" => "integer NOT NULL",
+                    "status" => "integer NOT NULL",
                 ));
                 $this->execute('INSERT INTO "'.Yii::app()->getModule('user')->tableUsers.'" SELECT "id","username","password","email","activkey","createtime","lastvisit","superuser","status" FROM "'.__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers.'"');
                 $this->execute('DROP TABLE "'.__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers.'"');

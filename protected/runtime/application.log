@@ -1382,3 +1382,557 @@ Stack trace:
 REQUEST_URI=/git/trunk/index.php?r=user/profile
 HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/user
 ---
+2014/07/03 13:17:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:17:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:18:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:18:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:18:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:18:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#9 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:19:39 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1485): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#4 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#5 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:20:08 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1485): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\git\trunk\protected\modules\user\UserModule.php(241): CActiveRecord->findByPk('1')
+#4 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(109): UserModule::user()
+#5 C:\xampp\htdocs\git\trunk\protected\modules\user\controllers\ProfileController.php(17): ProfileController->loadUser()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProfileController->actionProfile()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/profile')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/profile
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/03 13:24:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "("
+LINE 7:  "createtime" int(10) NOT NULL,
+                         ^. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" int(10) NOT NULL,
+	"lastvisit" int(10) NOT NULL,
+	"superuser" int(1) NOT NULL,
+	"status" int(1) NOT NULL
+).
+2014/07/03 13:25:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "("
+LINE 7:  "createtime" int(10) NOT NULL,
+                         ^. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" int(10) NOT NULL,
+	"lastvisit" int(10) NOT NULL,
+	"superuser" int(1) NOT NULL,
+	"status" int(1) NOT NULL
+).
+2014/07/03 13:28:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "("
+LINE 7:  "createtime" int(10) NOT NULL,
+                         ^. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" int(10) NOT NULL,
+	"lastvisit" int(10) NOT NULL,
+	"superuser" int(1) NOT NULL,
+	"status" int(1) NOT NULL
+).
+2014/07/03 13:29:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "("
+LINE 7:  "createtime" int(10) NOT NULL,
+                         ^. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" int(10) NOT NULL,
+	"lastvisit" int(10) NOT NULL,
+	"superuser" int(1) NOT NULL,
+	"status" int(1) NOT NULL
+).
+2014/07/03 13:32:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "ENGINE"
+LINE 11: ) ENGINE=InnoDB CHARSET=utf8
+           ^. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL DEFAULT '',
+	"password" varchar(128) NOT NULL DEFAULT '',
+	"email" varchar(128) NOT NULL DEFAULT '',
+	"activkey" varchar(128) NOT NULL DEFAULT '',
+	"createtime" integer NOT NULL DEFAULT 0,
+	"lastvisit" integer NOT NULL DEFAULT 0,
+	"superuser" integer NOT NULL DEFAULT 0,
+	"status" integer NOT NULL DEFAULT 0
+) ENGINE=InnoDB CHARSET=utf8.
+2014/07/03 13:35:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42883]: Undefined function: 7 ERROR:  function datetime(integer, unknown) does not exist
+LINE 1: UPDATE tbl_users SET create_at = datetime(createtime, 'unixe...
+                                         ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.. The SQL statement executed was: UPDATE tbl_users SET create_at = datetime(createtime, 'unixepoch'), lastvisit_at = datetime(lastvisit, 'unixepoch').
+2014/07/03 13:35:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42883]: Undefined function: 7 ERROR:  function datetime(integer, unknown) does not exist
+LINE 1: UPDATE tbl_users SET create_at = datetime(createtime, 'unixe...
+                                         ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.. The SQL statement executed was: UPDATE tbl_users SET create_at = datetime(createtime, 'unixepoch'), lastvisit_at = datetime(lastvisit, 'unixepoch').
+2014/07/03 13:38:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42P07]: Duplicate table: 7 ERROR:  relation "tbl_users" already exists. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" integer NOT NULL,
+	"lastvisit" integer NOT NULL,
+	"superuser" integer NOT NULL,
+	"status" integer NOT NULL
+).
+2014/07/03 13:38:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42P07]: Duplicate table: 7 ERROR:  relation "tbl_users" already exists. The SQL statement executed was: CREATE TABLE "tbl_users" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"username" varchar(20) NOT NULL,
+	"password" varchar(128) NOT NULL,
+	"email" varchar(128) NOT NULL,
+	"activkey" varchar(128) NOT NULL,
+	"createtime" integer NOT NULL,
+	"lastvisit" integer NOT NULL,
+	"superuser" integer NOT NULL,
+	"status" integer NOT NULL
+).
+2014/07/03 13:39:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42883]: Undefined function: 7 ERROR:  function datetime(integer, unknown) does not exist
+LINE 1: UPDATE tbl_users SET create_at = datetime(createtime, 'unixe...
+                                         ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.. The SQL statement executed was: UPDATE tbl_users SET create_at = datetime(createtime, 'unixepoch'), lastvisit_at = datetime(lastvisit, 'unixepoch').
+2014/07/03 13:42:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "create_at" violates not-null constraint
+DETAIL:  Failing row contains (1, admin, 21232f297a57a5a743894a0e4a801fc3, webmaster@example.com, 7d55657df0258999c357cb3cbe46f575, 1, 1, null, null).. The SQL statement executed was: INSERT INTO "tbl_users" SELECT "id","username","password","email","activkey","superuser","status","create_at","lastvisit_at" FROM "m110810_162301_userTimestampFix_tbl_users".
+2014/07/03 14:13:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42804]: Datatype mismatch: 7 ERROR:  column "main_image" is of type boolean but default expression is of type integer
+HINT:  You will need to rewrite or cast the expression.. The SQL statement executed was: CREATE TABLE "tbl_product_images" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"product_id" integer,
+	"name" character varying (255),
+	"file_name" character varying (255),
+	"main_image" boolean default 0
+).
+2014/07/03 14:14:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=gii
+---
+2014/07/03 14:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=gii
+---
+2014/07/03 14:14:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=gii
+---
+2014/07/03 14:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=gii
+---
+2014/07/03 14:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=gii
+---
+2014/07/03 14:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product/index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/index
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/
+---
+2014/07/03 14:19:31 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.theme" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(7): CComponent->__set('theme', 'sb-admin')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/index
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/
+---
+2014/07/03 14:25:06 [error] [exception.CException] exception 'CException' with message 'Product and its behaviors do not have a method or closure named "getData".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getData', Array)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(111): CActiveRecord->__call('getData', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(111): Product->getData()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#4 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\product\admin.php(18): CBaseController->widget('booster.widgets...', Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(18): CController->render('admin', Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionAdmin()
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/admin')
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/admin
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/index
+---
+2014/07/03 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/create')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/create
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/03 14:38:46 [error] [php] Undefined variable: Yii (C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/create
+in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php (22)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/04 13:47:09 [error] [php] Undefined variable: modle (C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:27)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/create
+in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php (27)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/04 13:47:21 [error] [exception.CException] exception 'CException' with message 'ProductController cannot find the requested view "detail".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('detail', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(41): CController->render('detail', Array)
+#2 [internal function]: ProductController->actionDetail('1')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('detail')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/detail')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/detail&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/create
+---
+2014/07/04 14:06:06 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.title" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\product\admin.php(4): CComponent->__set('title', 'sacsac')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(18): CController->render('admin', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionAdmin()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('admin')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/admin')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/admin
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/profile
+---
+2014/07/04 14:07:52 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.pageSubTitle" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\main.php(127): CComponent->__get('pageSubTitle')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('?<div class="co...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('?<div class="co...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(206): COutputProcessor->run()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\layouts\column1.php(6): CBaseController->endContent()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(18): CController->render('admin', Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionAdmin()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/admin')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/admin
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/profile
+---
+2014/07/04 14:09:11 [error] [php] include(TbButtonColumn.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): import()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): createComponent()
+#2 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): TbExtendedGridView->initColumns()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbExtendedGridView->initColumns()
+#4 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): TbExtendedGridView->init()
+#5 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbExtendedGridView->init()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): ProductController->createWidget()
+#8 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\product\admin.php(28): ProductController->widget()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProductController->renderFile()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProductController->renderPartial()
+#13 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(18): ProductController->render()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionAdmin()
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/admin
+in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php (125)
+in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php (68)
+in C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php (234)
+2014/07/04 14:12:24 [error] [exception.CException] exception 'CException' with message 'ProductController cannot find the requested view "detail".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('detail', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(42): CController->render('detail', Array)
+#2 [internal function]: ProductController->actionView('1')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/04 14:53:57 [error] [exception.CException] exception 'CException' with message 'Alias "boosters.widgets.TbModal" is invalid. Make sure it points to an existing directory or file.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:347
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(146): YiiBase::import('boosters.widget...', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ProductController), 'boosters.widget...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(189): CBaseController->createWidget('boosters.widget...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\product\view.php(63): CBaseController->beginWidget('boosters.widget...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php(46): CController->render('view', Array)
+#9 [internal function]: ProductController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
