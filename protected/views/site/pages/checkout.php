@@ -4,20 +4,20 @@
           <div class="span3 progress">
             <h3>Checkout progress</h3>
             <ul class="rr">
-              <li>
-                <a href="#">Time Schedule</a>
+             <li>
+                <a href="#" class="currentmethod">Checkout method</a>
               </li>
               <li>
-                <a href="#">Billing address</a>
+                <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'timeschedule')); ?>">Time Schedule</a>
               </li>
               <li>
-                <a href="#">Shipping address</a>
+                <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'shippingaddress')); ?>">Shipping address</a>
               </li>
               <li>
-                <a href="#">Shipping method</a>
+                <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'shippingmethod')); ?>">Shipping method</a>
               </li>
               <li>
-                <a href="#">Payment method</a>
+                <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'paymentmethod')); ?>">Payment method</a>
               </li>
             </ul>
           </div>
@@ -99,15 +99,7 @@
                 </div>
               </li>
               <li>
-                <h6>Billing information</h6>
-                <div class="row">
-                  <div class="span9 content-wrapper">
-                    Content
-                  </div>
-                </div>
-              </li>
-              <li>
-                <h6>Shipping information</h6>
+                <h6>Shipping Address</h6>
                 <div class="row">
                   <div class="span9 content-wrapper">
                     Content

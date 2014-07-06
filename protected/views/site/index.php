@@ -149,7 +149,7 @@
               <span class="badge corner-badge hot ir hidden">Hot</span>
      
               <a href="index.php?page=productdetail">
-                <img src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/ph/ph-home-big-2.png" class="desat-ie" alt=""/>
+                <img src="<?php echo Yii::app()->theme->baseUrl.'/assets/'; ?>img/ph/2.jpg" class="desat-ie" alt=""/>
               </a>
             <span class="status stylestatus">
                 <table class="simple-table">

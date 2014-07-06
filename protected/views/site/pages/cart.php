@@ -63,12 +63,12 @@
               </div>
               
             </td>
-            <td class="price">
+            <td>
             
               <span class="currency">Rp.</span><span class="value">1.500.000</span>
             
             </td>
-            <td class="price dark">
+            <td class="dark">
             
               <span class="currency">Rp.</span><span class="value">1.500.000</span>
             
@@ -108,12 +108,12 @@
               </div>
               
             </td>
-            <td class="price">
+            <td>
             
               <span class="currency">Rp.</span><span class="value">1.000.000</span>
             
             </td>
-            <td class="price dark">
+            <td class="dark">
             
               <span class="currency">Rp.</span><span class="value">1.000.000</span>
             
@@ -124,12 +124,36 @@
             
             </td>
           </tr>
-         
+         <tr>
+            <td colspan="3" class="left">
+              Total products (tax incl.):
+            </td>
+            <td colspan="2" class="price rigth">
+               <span class="currency">Rp.</span><span class="value">3.000.000</span>
+            </td>
+         </tr>
+          <tr>
+            <td colspan="3" class="left">
+              Shipping:
+            </td>
+            <td colspan="2" class="price rigth">
+               <span class="currency">Rp.</span><span class="value">10.000</span>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="3" class="left coklat whitefont">
+              Total:
+            </td>
+            <td colspan="2" class="price rigth">
+               <span class="currency">Rp.</span><span class="value">3.010.000</span>
+            </td>
+         </tr>
         </table>
         
-        <div class="row-fluid checkout">
-          <div class="span4">
-            <a href="#" class="btn"><span class="gradient">Checkout</span></a>
+          <div class="row-fluid checkout">
+          <div class="span12">
+             <a href="#" class=" btn" style="float: left;"><span class="gradient">Back Up</span></a>
+            <a href="#" class=" btn" style="float: right;"><span class="gradient">Checkout</span></a>
           </div>
         </div>
         
