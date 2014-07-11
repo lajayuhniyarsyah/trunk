@@ -9,8 +9,9 @@ class ProductController extends Controller
 	}
 	public function actionAdmin()
 	{
-		Yii::app()->theme = 'sb-admin';
+		Yii::app()->theme = Yii::app()->params['adminTheme'];
 		$model = new Product('search');
+		$model->unsetAttributes();
 		if(isset($_GET['Product'])){
 
 		}
@@ -19,7 +20,7 @@ class ProductController extends Controller
 	}
 
 	public function actionCreate(){
-		Yii::app()->theme='sb-admin';
+		Yii::app()->theme = Yii::app()->params['adminTheme'];
 		$model = new Product;
 
 		if(isset($_POST['Product'])){
@@ -34,16 +35,45 @@ class ProductController extends Controller
 
 
 	public function actionView($id){
-		Yii::app()->theme = 'sb-admin';
+		Yii::app()->theme = Yii::app()->params['adminTheme'];
+		// fetch model
 		$model = Product::model()->findByPk($id);
+		if(!$model) throw new CHttpException(404,'Product Not Found');
+
+		// AJAX EDITABLE
+		if(Yii::app()->request->isAjaxRequest && isset($_POST['scenario'])){
+			// if editable detrail view update
+			$model->{$_POST['name']} = $_POST['value'];
+			$model->save();
+			Yii::app()->end();
+		}
+
+		
+		// IMAGE MODEL
+		$imageModel = new ProductImages;
+		if(isset($_POST['ProductImages'])){
+			$imageModel->attributes = $_POST['ProductImages'];
+			
+			$imageModel->product_id = $model->id;
+			if($imageModel->save()){
+				// recall
+				$this->redirect(array('view','id'=>$model->id));
+
+			}
+		}
+
+
+
+		$model = Product::model()->findByPk($id);
+		
 
 		$imageDataProvider = new CArrayDataProvider($model->productImages,array(
 			'keyField'=>'id'
 		));
 
-		if(!$model) throw new CHttpException(404,'Product Not Found');
+		
 
-		$this->render('view',array('model'=>$model,'imageDataProvider'=>$imageDataProvider));
+		$this->render('view',array('model'=>$model,'imageDataProvider'=>$imageDataProvider,'imageModel'=>$imageModel));
 	}
 	// Uncomment the following methods and override them if needed
 	/*
@@ -71,4 +101,29 @@ class ProductController extends Controller
 		);
 	}
 	*/
+
+
+	public function actionDeleteImage($id)
+	{
+		$image = ProductImages::model()->findByPk($id);
+		if(!$image) throw new CHttpException(404,'Data Not Found');
+
+		$image->delete();
+	}
+
+	public function actionSetMainImage(){
+		if(isset($_POST['id'])){
+			$id = (int) $_POST['id'];
+			$model = ProductImages::model()->findByPk($id);
+			if(!$model) throw new CHttpException(404,'Image Not Found');
+			// find product images who checked
+			$checked = ProductImages::model()->findByAttributes(array('product_id'=>$_POST['productId'],'main_image'=>true));
+			$checked->main_image = false;
+			$checked->update();
+
+			$model->main_image = 1;
+			$model->update();
+			Yii::app()->end();
+		}
+	}
 }

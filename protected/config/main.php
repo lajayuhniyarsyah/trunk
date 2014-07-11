@@ -96,6 +96,9 @@ return array(
       		'allowAutoLogin'=>true,
             'loginUrl' => array('/user/login'),
 		),
+		'phpThumb'=>array(
+			'class'=>'ext.EPhpThumb.EPhpThumb',
+		),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -153,5 +156,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'adminTheme'=>'sb-admin',
 	),
 );

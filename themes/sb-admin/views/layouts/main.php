@@ -45,6 +45,8 @@
           <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
           <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
           <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/gallery/admin') ?>"><i class="fa fa-wrench"></i>Gallery</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/cart/admin') ?>"><i class="fa fa-user"></i>Cart History</a></li>
           <li><a href="<?php echo Yii::app()->createUrl('/product/admin') ?>"><i class="fa fa-user"></i>Products</a></li>
           <li><a href="<?php echo Yii::app()->createUrl('/user/profile') ?>"><i class="fa fa-user"></i> My Profile</a></li>
           <li class="dropdown">

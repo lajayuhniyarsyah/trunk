@@ -71,12 +71,10 @@ build/
 *.tlh
 *.tmp
 *.tmp_proj
-*.log
 *.vspscc
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual C++ cache files
@@ -214,4 +212,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+application.log
+images/
 *.log

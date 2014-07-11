@@ -1,26 +1,28 @@
 <?php
 
 /**
- * This is the model class for table "{{product}}".
+ * This is the model class for table "{{cart}}".
  *
- * The followings are the available columns in table '{{product}}':
+ * The followings are the available columns in table '{{cart}}':
  * @property integer $id
- * @property string $name
- * @property integer $qty
- * @property string $price
- * @property string $tags
+ * @property string $code
+ * @property integer $user_id
+ * @property string $sess_id
+ * @property integer $type
+ * @property integer $state
  *
  * The followings are the available model relations:
- * @property ProductImages[] $productImages
+ * @property Users $user
+ * @property CartDetail[] $cartDetails
  */
-class Product extends CActiveRecord
+class Cart extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{product}}';
+		return '{{cart}}';
 	}
 
 	/**
@@ -31,13 +33,13 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('qty', 'numerical', 'integerOnly'=>true),
-			array('name, tags', 'length', 'max'=>255),
-			array('price','numerical','integerOnly'=>false,),
-			// array('price', 'safe'),
+			array('code, user_id, sess_id', 'required'),
+			array('user_id, type, state', 'numerical', 'integerOnly'=>true),
+			array('code', 'length', 'max'=>20),
+			array('sess_id', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, qty, price, tags', 'safe', 'on'=>'search'),
+			array('id, code, user_id, sess_id, type, state', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,7 +51,8 @@ class Product extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'productImages' => array(self::HAS_MANY, 'ProductImages', 'product_id'),
+			'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
+			'cartDetails' => array(self::HAS_MANY, 'CartDetail', 'cart_id'),
 		);
 	}
 
@@ -60,10 +63,11 @@ class Product extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'qty' => 'Stock',
-			'price' => 'Price',
-			'tags' => 'Tags',
+			'code' => 'Code',
+			'user_id' => 'User',
+			'sess_id' => 'Sess',
+			'type' => 'Type',
+			'state' => 'State',
 		);
 	}
 
@@ -86,10 +90,11 @@ class Product extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('qty',$this->qty);
-		$criteria->compare('price',$this->price,true);
-		$criteria->compare('tags',$this->tags,true);
+		$criteria->compare('code',$this->code,true);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('sess_id',$this->sess_id,true);
+		$criteria->compare('type',$this->type);
+		$criteria->compare('state',$this->state);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,7 +105,7 @@ class Product extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Product the static model class
+	 * @return Cart the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

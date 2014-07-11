@@ -7,10 +7,7 @@
             'url' => array(),
             'attributes' => array(
                 'name',
-                'price',
-                'qty',
-                'tags',
-
+                'description',
             )
         )
     );
@@ -24,10 +21,10 @@
             'type' => 'striped bordered',
             'headerOffset' => 40,
             // 40px is the height of the main navigation at bootstrap
-            'dataProvider' => $imageDataProvider,
+            'dataProvider' => $photos,
             'template' => "{items}",
             'columns' => array(
-                'name',
+                'caption',
                 /*array(
                     'name'=>'file_name',
                     'value'=>function($data){
@@ -42,7 +39,7 @@
                     }
                 ),
                 array(
-                    'name'=>'main_image',
+                    'name'=>'description',
                     'header'=>'Main',
                     'class'=>'zii.widgets.grid.CCheckBoxColumn',
                     'value'=>function($data){
@@ -134,10 +131,10 @@
 
             ?>
             <div class="row">
-                <?php echo $form->textFieldGroup($imageModel,'name'); ?>
+                <?php echo $form->textFieldGroup($galleryDetail,'caption'); ?>
             </div>
             <div class="row">
-                <?php echo $form->fileFieldGroup($imageModel,'file'); ?>
+                <?php echo $form->fileFieldGroup($galleryDetail,'file'); ?>
             </div>
             <?php
                 $this->endWidget();

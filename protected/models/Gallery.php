@@ -1,29 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "{{product_images}}".
+ * This is the model class for table "{{gallery}}".
  *
- * The followings are the available columns in table '{{product_images}}':
+ * The followings are the available columns in table '{{gallery}}':
  * @property integer $id
- * @property integer $product_id
  * @property string $name
- * @property string $file_name
- * @property boolean $main_image
+ * @property integer $main_cover
+ * @property string $description
  *
  * The followings are the available model relations:
- * @property Product $product
+ * @property GalleryDetail $mainCover
  */
-class ProductImages extends CActiveRecord
+class Gallery extends CActiveRecord
 {
-	public $file;
-
-	private $oldData;
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{product_images}}';
+		return '{{gallery}}';
 	}
 
 	/**
@@ -34,59 +30,14 @@ class ProductImages extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('product_id', 'numerical', 'integerOnly'=>true),
-			array('name, file_name', 'length', 'max'=>255),
-			array('main_image', 'safe'),
-			array('file','file','types'=>'jpg,jpeg,png,JPEG,JPG,PNG'),
+			array('name', 'required'),
+			array('main_cover', 'numerical', 'integerOnly'=>true),
+			array('name', 'length', 'max'=>255),
+			array('description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, product_id, name, file_name, main_image', 'safe', 'on'=>'search'),
+			array('id, name, main_cover, description', 'safe', 'on'=>'search'),
 		);
-	}
-
-	public function beforeValidate(){
-		if($this->isNewRecord){
-			$this->file = CUploadedFile::getInstance($this,'file');
-		}
-		return true;
-	}
-
-	public function afterValidate(){
-		if($this->isNewRecord)
-			$this->file_name = time().Yii::app()->user->getId().'.'.$this->file->extensionName;
-	}
-
-
-	public function beforeSave()
-	{
-		if($this->isNewRecord)
-			$this->file->saveAs('images/products/'.$this->file_name);
-		return true;
-	}
-
-	public function afterSave(){
-		if($this->isNewRecord){
-			$this->saveThumb();
-		}
-
-		return true;
-	}
-
-	public function beforeDelete(){
-		$this->oldData = $this;
-		return true;
-	}
-
-	public function afterDelete(){
-		@unlink('images/products/'.$this->oldData->file_name);
-		@unlink('images/products/thumb/'.$this->oldData->file_name);
-	}
-
-	public function saveThumb($width=200,$height=200)
-	{
-		$thumb=Yii::app()->phpThumb->create('images/products/'.$this->file_name);
-		$thumb->resize($width,$height);
-		$thumb->save('images/products/thumb/'.$this->file_name);
 	}
 
 	/**
@@ -97,7 +48,8 @@ class ProductImages extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'product' => array(self::BELONGS_TO, 'Product', 'product_id'),
+			'mainCover' => array(self::BELONGS_TO, 'GalleryDetail', 'main_cover'),
+			'details'=>array(self::HAS_MANY,'GalleryDetail','gallery_id'),
 		);
 	}
 
@@ -108,10 +60,9 @@ class ProductImages extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'product_id' => 'Product',
 			'name' => 'Name',
-			'file_name' => 'File Name',
-			'main_image' => 'Main Image',
+			'main_cover' => 'Main Cover',
+			'description' => 'Description',
 		);
 	}
 
@@ -134,10 +85,9 @@ class ProductImages extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('product_id',$this->product_id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('file_name',$this->file_name,true);
-		$criteria->compare('main_image',$this->main_image);
+		$criteria->compare('main_cover',$this->main_cover);
+		$criteria->compare('description',$this->description,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -148,7 +98,7 @@ class ProductImages extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return ProductImages the static model class
+	 * @return Gallery the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

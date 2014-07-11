@@ -1936,3 +1936,1141 @@ Stack trace:
 REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
 HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
 ---
+2014/07/06 11:20:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08006] [7] FATAL:  password authentication failed for user "trunk_usr"' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\modules\user\controllers\LoginController.php(21): CModel->validate()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/git/trunk/index.php?r=user/login
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=user/login
+---
+2014/07/06 11:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/update')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/update&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 19:48:54 [error] [php] Undefined variable: imageModel (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php:89)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProductController->renderFile()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProductController->renderPartial()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(46): ProductController->render()
+#3 unknown(0): ProductController->actionView()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php (89)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (46)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 19:50:05 [error] [exception.CException] exception 'CException' with message 'ProductController has an extra endWidget(imageFormModal) call in its view.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(124): CBaseController->endWidget('imageFormModal')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(47): CController->render('view', Array)
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 20:50:52 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 20:50:52 [error] [php] move_uploaded_file(/images/products/14046546521.jpg): failed to open stream: No such file or directory (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CUploadedFile.php:198)
+Stack trace:
+#0 unknown(0): ProductController->actionView()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (49)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 20:51:09 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 20:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('delete')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/delete')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2Fdelete
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:00:19 [error] [php] Use of undefined constant sacas - assumed 'sacas' (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CButtonColumn.php(319): TbButtonColumn->renderButton()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridColumn.php(151): TbButtonColumn->renderDataCellContent()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(632): TbButtonColumn->renderDataCell()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(572): TbExtendedGridView->renderTableRow()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(482): TbExtendedGridView->renderTableBody()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(167): TbExtendedGridView->renderItems()
+#6 unknown(0): TbExtendedGridView->renderSection()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(244): TbExtendedGridView->renderContent()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(135): TbExtendedGridView->renderContent()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): TbExtendedGridView->run()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(45): ProductController->widget()
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProductController->renderFile()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProductController->renderPartial()
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(69): ProductController->render()
+#17 unknown(0): ProductController->actionView()
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#24 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#25 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbButtonColumn.php (78)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php (632)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php (244)
+2014/07/06 21:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deleteImages".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('deleteImages')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('deleteImages')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/deleteI...')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2FdeleteImages
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:04:33 [error] [php] include(PorductImage.php): failed to open stream: No such file or directory (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(101): spl_autoload_call()
+#1 unknown(0): ProductController->actionDeleteImage()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2FdeleteImage
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (101)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:04:51 [error] [php] include(PorductImages.php): failed to open stream: No such file or directory (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(101): spl_autoload_call()
+#1 unknown(0): ProductController->actionDeleteImage()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2FdeleteImage
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (101)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:05:06 [error] [php] include(PorductImages.php): failed to open stream: No such file or directory (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(101): spl_autoload_call()
+#1 unknown(0): ProductController->actionDeleteImage()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2FdeleteImage
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (101)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:12:36 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:12:37 [error] [exception.CException] exception 'CException' with message 'Image file not found: iamges/products/14046559561.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('iamges/products...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('iamges/products...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:14:20 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:14:20 [error] [exception.CException] exception 'CException' with message 'Image file not found: images/products/14046560601.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('images/products...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('images/products...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:15:46 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:15:46 [error] [exception.CException] exception 'CException' with message 'Image file not found: images/products/14046561461.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('images/products...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('images/products...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:16:11 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:16:11 [error] [exception.CException] exception 'CException' with message 'Image file not found: ../images/products/14046561711.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('../images/produ...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('../images/produ...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:16:20 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:16:20 [error] [exception.CException] exception 'CException' with message 'Image file not found: ../../images/products/14046561801.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('../../images/pr...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('../../images/pr...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:16:24 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:16:24 [error] [exception.CException] exception 'CException' with message 'Image file not found: ../../../images/products/14046561841.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('../../../images...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('../../../images...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:16:29 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:16:29 [error] [exception.CException] exception 'CException' with message 'Image file not found: ../../../../images/products/14046561891.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('../../../../ima...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('../../../../ima...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:16:36 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:16:36 [error] [exception.CException] exception 'CException' with message 'Image file not found: images/products/14046561961.jpg' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php:59
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EPhpThumb.php(44): EPhpThumb::thumbFactory('images/products...')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(67): EPhpThumb->create('images/products...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(49): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:23:01 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:23:01 [error] [php] Undefined variable: model (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php:59)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): ProductImages->save()
+#1 unknown(0): ProductController->actionView()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php (59)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (48)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:23:15 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:23:15 [error] [exception.CException] exception 'CException' with message 'Property "ProductImages.file_Name" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(145): CComponent->__get('file_Name')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(59): CActiveRecord->__get('file_Name')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1071): ProductImages->beforeSave()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#5 [internal function]: ProductController->actionView('1')
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:23:37 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:23:53 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:24:27 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:24:28 [error] [exception.RuntimeException] exception 'RuntimeException' with message 'File not writeable: images/products/thumb/14046566671.png' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\lib\phpThumb\src\GdThumb.inc.php:951
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\EPhpThumb\EThumbnail.php(103): GdThumb->save('images/products...', NULL)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(85): EThumbnail->save('images/products...')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php(65): ProductImages->saveThumb()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1097): ProductImages->afterSave()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(48): CActiveRecord->save()
+#6 [internal function]: ProductController->actionView('1')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:24:59 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:28:01 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (43)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:36:03 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (53)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:36:54 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.end" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CModule.php(105): CComponent->__get('end')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(46): CModule->__get('end')
+#2 [internal function]: ProductController->actionView('1')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:38:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type numeric: "2000000asc"
+LINE 1: ...ET "id"=1, "name"='Baju Muslim', "qty"=3, "price"='2000000as...
+                                                             ^. The SQL statement executed was: UPDATE "tbl_product" SET "id"=:yp0, "name"=:yp1, "qty"=:yp2, "price"=:yp3, "tags"=:yp4 WHERE "tbl_product"."id"=1.
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (46)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:38:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type numeric: "2000000asc"
+LINE 1: ...ET "id"=1, "name"='Baju Muslim', "qty"=3, "price"='2000000as...
+                                                             ^. The SQL statement executed was: UPDATE "tbl_product" SET "id"=:yp0, "name"=:yp1, "qty"=:yp2, "price"=:yp3, "tags"=:yp4 WHERE "tbl_product"."id"=1' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1748): CDbCommand->execute()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1124): CActiveRecord->updateByPk(1, Array)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->update(NULL)
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(46): CActiveRecord->save()
+#4 [internal function]: ProductController->actionView('1')
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:39:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type numeric: "2000000klm "
+LINE 1: ...ET "id"=1, "name"='Baju Muslim', "qty"=3, "price"='2000000kl...
+                                                             ^. The SQL statement executed was: UPDATE "tbl_product" SET "id"=:yp0, "name"=:yp1, "qty"=:yp2, "price"=:yp3, "tags"=:yp4 WHERE "tbl_product"."id"=1.
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (46)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 21:39:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type numeric: "2000000klm "
+LINE 1: ...ET "id"=1, "name"='Baju Muslim', "qty"=3, "price"='2000000kl...
+                                                             ^. The SQL statement executed was: UPDATE "tbl_product" SET "id"=:yp0, "name"=:yp1, "qty"=:yp2, "price"=:yp3, "tags"=:yp4 WHERE "tbl_product"."id"=1' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1748): CDbCommand->execute()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1124): CActiveRecord->updateByPk(1, Array)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->update(NULL)
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(46): CActiveRecord->save()
+#4 [internal function]: ProductController->actionView('1')
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:42:37 [error] [exception.CException] exception 'CException' with message 'Unknown type "images".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\utils\CFormatter.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CDataColumn.php(140): CFormatter->format('images/products...', 'images')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(ProductImages))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(632): CGridColumn->renderDataCell(0)
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(572): TbExtendedGridView->renderTableRow(0)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{items}')
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(244): CBaseListView->renderContent()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(135): TbExtendedGridView->renderContent()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): CBaseListView->run()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(54): CBaseController->widget('booster.widgets...', Array)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#17 [internal function]: ProductController->actionView('1')
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#25 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 21:45:46 [error] [exception.CException] exception 'CException' with message 'Property "TbExtendedGridView.json" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbJsonCheckBoxColumn.php(27): CComponent->__get('json')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(506): TbJsonCheckBoxColumn->renderHeaderCell()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(339): CGridView->renderTableHeader()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(480): TbExtendedGridView->renderTableHeader()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 [internal function]: CBaseListView->renderSection(Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{items}')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(244): CBaseListView->renderContent()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(135): TbExtendedGridView->renderContent()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#16 [internal function]: ProductController->actionView('1')
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#24 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:45:57 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.TbCheckBoxColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.widgets...', true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbExtendedGridView))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#14 [internal function]: ProductController->actionView('1')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:46:02 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.CCheckBoxColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.widgets...', true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbExtendedGridView))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#14 [internal function]: ProductController->actionView('1')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:46:14 [error] [exception.CException] exception 'CException' with message 'Alias "booster.widgets.CCheckboxColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('booster.widgets...', true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbExtendedGridView))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#14 [internal function]: ProductController->actionView('1')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:46:34 [error] [php] include(CheckBoxColumn.php): failed to open stream: No such file or directory (C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): import()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): createComponent()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): TbExtendedGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbExtendedGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): TbExtendedGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbExtendedGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): ProductController->createWidget()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): ProductController->widget()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ProductController->renderFile()
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ProductController->renderPartial()
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): ProductController->render()
+#14 unknown(0): ProductController->actionView()
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php (125)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php (68)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php (234)
+2014/07/06 21:46:44 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.CheckBoxColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('zii.widgets.Che...', true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbExtendedGridView))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#14 [internal function]: ProductController->actionView('1')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:46:48 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.grid.CheckBoxColumn" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php:322
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(196): YiiBase::import('zii.widgets.gri...', true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbExtendedGridView))
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbExtendedGridView.php(234): TbGridView->init()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbExtendedGridView->init()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\product\view.php(57): CBaseController->widget('booster.widgets...', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(75): CController->render('view', Array)
+#14 [internal function]: ProductController->actionView('1')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/06 21:52:23 [warning] [application] Failed to set unsafe attribute "file" of "ProductImages".
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (54)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 22:08:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "setMainImage".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('setMainImage')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 22:11:26 [error] [php] Undefined variable: id (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php:115)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (115)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 22:12:07 [error] [php] Trying to get property of non-object (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php:53)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(120): ProductImages->save()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ProductController->runAction()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ProductController->run()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\models\ProductImages.php (53)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php (120)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/06 22:20:47 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_product_images" does not have a column named "main_images".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CPgsqlTableSchema), Array, '', Array, '"t".')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(119): CActiveRecord->findByAttributes(Array)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 22:21:15 [error] [exception.CException] exception 'CException' with message 'Property "ProductImages.main_images" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(161): CComponent->__set('main_images', false)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\ProductController.php(120): CActiveRecord->__set('main_images', false)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/view&id=1
+---
+2014/07/06 22:40:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42704]: Undefined object: 7 ERROR:  type "tinyint" does not exist
+LINE 5:  "state" tinyint(1) not null default 0
+                 ^. The SQL statement executed was: CREATE TABLE "tbl_cart" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"user_id" integer not null,
+	"sess_id" character varying (255) not null,
+	"state" tinyint(1) not null default 0
+).
+2014/07/06 22:41:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42704]: Undefined object: 7 ERROR:  type "tinyint" does not exist
+LINE 5:  "state" tinyint(1) not null default 0
+                 ^. The SQL statement executed was: CREATE TABLE "tbl_cart" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"user_id" integer not null,
+	"sess_id" character varying (255) not null,
+	"state" tinyint(1) not null default 0
+).
+2014/07/06 22:41:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at or near "("
+LINE 5:  "state" smallint(1) not null default 0
+                         ^. The SQL statement executed was: CREATE TABLE "tbl_cart" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"user_id" integer not null,
+	"sess_id" character varying (255) not null,
+	"state" smallint(1) not null default 0
+).
+2014/07/06 23:21:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  zero-length delimited identifier at or near """"
+LINE 1: CREATE TABLE "" (
+                     ^. The SQL statement executed was: CREATE TABLE "" (
+	"id" serial NOT NULL PRIMARY KEY,
+	"name" character varying (255) not null,
+	"main_cover" integer,
+	"description" text
+).
+2014/07/06 23:34:26 [error] [php] Undefined variable: newGallery (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\admin.php:77)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): GalleryController->renderFile()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): GalleryController->renderPartial()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(19): GalleryController->render()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): GalleryController->actionAdmin()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/admin
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\admin.php (77)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php (19)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/09 20:38:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('delete')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/delete')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=gallery%2Fdelete
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/09 20:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/09 21:03:39 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.details" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(145): CComponent->__get('details')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(51): CActiveRecord->__get('details')
+#2 [internal function]: GalleryController->actionView('1')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/09 21:04:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42703]: Undefined column: 7 ERROR:  column details.gallery_id does not exist
+LINE 1: ...1_c3" FROM "tbl_gallery_detail" "details"  WHERE ("details"....
+                                                             ^. The SQL statement executed was: SELECT "details"."id" AS "t1_c0", "details"."caption" AS "t1_c1", "details"."file_name" AS "t1_c2", "details"."description" AS "t1_c3" FROM "tbl_gallery_detail" "details"  WHERE ("details"."gallery_id"=:ypl0).
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php (51)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/09 21:04:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42703]: Undefined column: 7 ERROR:  column details.gallery_id does not exist
+LINE 1: ...1_c3" FROM "tbl_gallery_detail" "details"  WHERE ("details"....
+                                                             ^. The SQL statement executed was: SELECT "details"."id" AS "t1_c0", "details"."caption" AS "t1_c1", "details"."file_name" AS "t1_c2", "details"."description" AS "t1_c3" FROM "tbl_gallery_detail" "details"  WHERE ("details"."gallery_id"=:ypl0)' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Gallery))
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Gallery))
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('details')
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(51): CActiveRecord->__get('details')
+#7 [internal function]: GalleryController->actionView('1')
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#15 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/09 21:09:45 [error] [php] Trying to get property of non-object (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php:51)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php (51)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/09 21:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Gallery not found' in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php:49
+Stack trace:
+#0 [internal function]: GalleryController->actionView('1')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/09 21:15:38 [error] [exception.CException] exception 'CException' with message 'GalleryController cannot find the requested view "view".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(54): CController->render('view', Array)
+#2 [internal function]: GalleryController->actionView('1')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/09 21:16:11 [error] [exception.CException] exception 'CException' with message 'GalleryController cannot find the requested view "view".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(54): CController->render('view', Array)
+#2 [internal function]: GalleryController->actionView('1')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/10 07:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('update')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('update')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/update')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/update&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/10 07:41:33 [error] [php] Undefined variable: imageModel (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php:134)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): GalleryController->renderFile()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): GalleryController->renderPartial()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(55): GalleryController->render()
+#3 unknown(0): GalleryController->actionView()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php (134)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php (55)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/10 07:42:36 [error] [php] Undefined variable: galleryDetail (C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php:134)
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): GalleryController->renderFile()
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): GalleryController->renderPartial()
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(57): GalleryController->render()
+#3 unknown(0): GalleryController->actionView()
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php (134)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php (57)
+in C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php (13)
+2014/07/10 07:42:52 [error] [exception.CException] exception 'CException' with message 'Property "GalleryDetail.name" is not defined.' in C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('name')
+#2 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(GalleryDetail), 'name')
+#3 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(GalleryDetail), 'name', Array)
+#4 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(GalleryDetail), 'name', Array)
+#5 [internal function]: CActiveForm->textField(Object(GalleryDetail), 'name', Array)
+#6 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(1239): call_user_func_array(Array, Array)
+#7 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(1148): TbActiveForm->horizontalGroup(Array, Object(GalleryDetail), 'name', Array)
+#8 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\extensions\booster\widgets\TbActiveForm.php(389): TbActiveForm->customFieldGroupInternal(Array, Object(GalleryDetail), 'name', Array)
+#9 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(134): TbActiveForm->textFieldGroup(Object(GalleryDetail), 'name')
+#10 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\\Program File...')
+#11 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\Program File...', Array, true)
+#12 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\\Program File...', Array, true)
+#13 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#14 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\protected\controllers\GalleryController.php(57): CController->render('view', Array)
+#15 [internal function]: GalleryController->actionView('1')
+#16 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#17 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#18 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#20 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#22 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#23 C:\Program Files (x86)\Zend\Apache2\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\Program Files (x86)\Zend\Apache2\htdocs\git\trunk\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
