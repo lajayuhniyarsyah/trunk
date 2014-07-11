@@ -215,3 +215,4 @@ pip-log.txt
 application.log
 images/
 *.log
+protected/runtime/application.log

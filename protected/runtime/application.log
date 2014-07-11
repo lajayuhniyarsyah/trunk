@@ -3074,3 +3074,369 @@ Stack trace:
 REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
 HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
 ---
+2014/07/11 11:48:20 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{gallery}}" for active record class "Gallery" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Gallery))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(14): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): GalleryController->actionAdmin()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/admin')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/admin
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=product/admin
+---
+2014/07/11 13:11:06 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:11:32 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:19:36 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:19:43 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:34:47 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:34:47 [error] [php] move_uploaded_file(images/gallery/14050784871.jpg): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CUploadedFile.php:198)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1071): GalleryDetail->beforeSave()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): GalleryDetail->insert()
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(63): GalleryDetail->save()
+#3 unknown(0): GalleryController->actionView()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+in C:\xampp\htdocs\git\trunk\protected\models\GalleryDetail.php (129)
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (63)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:35:27 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:35:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "gallery_id" violates not-null constraint
+DETAIL:  Failing row contains (1, null, Tes1, 14050785271.jpg, null).. The SQL statement executed was: INSERT INTO "tbl_gallery_detail" ("caption", "file_name") VALUES (:yp0, :yp1).
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (63)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:35:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "gallery_id" violates not-null constraint
+DETAIL:  Failing row contains (1, null, Tes1, 14050785271.jpg, null).. The SQL statement executed was: INSERT INTO "tbl_gallery_detail" ("caption", "file_name") VALUES (:yp0, :yp1)' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(63): CActiveRecord->save()
+#3 [internal function]: GalleryController->actionView('1')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 13:37:49 [error] [exception.CException] exception 'CException' with message 'Property "CNumberValidator.intgegerOnly" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\validators\CValidator.php(189): CComponent->__set('intgegerOnly', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModel.php(287): CValidator::createValidator('numerical', Object(GalleryDetail), 'gallery_id', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModel.php(547): CModel->getValidators()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CModel.php(468): CModel->getSafeAttributeNames()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php(152): CModel->setAttributes(Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(161): CComponent->__set('attributes', Array)
+#7 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(58): CActiveRecord->__set('attributes', Array)
+#8 [internal function]: GalleryController->actionView('1')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 13:38:04 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 13:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "viewImage".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('viewImage')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('viewImage')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/viewIma...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/viewImage&id=2
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 14:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Data Not Found' in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:109
+Stack trace:
+#0 [internal function]: ProductController->actionDeleteImage('2')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('deleteImage')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/deleteI...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?ajax=yw0&id=2&r=product%2FdeleteImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 14:23:28 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (58)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 15:29:13 [error] [exception.CException] exception 'CException' with message 'Property "TbGridView.fixedHeader" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('fixedHeader', true)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(GalleryController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(87): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(86): CController->render('view', Array)
+#9 [internal function]: GalleryController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:29:23 [error] [exception.CException] exception 'CException' with message 'Property "TbGridView.headerOffset" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('headerOffset', 40)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(GalleryController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(87): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(86): CController->render('view', Array)
+#9 [internal function]: GalleryController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:34:22 [error] [php] strpos() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:963)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): GalleryController->renderInternal()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): GalleryController->renderFile()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): GalleryController->renderPartial()
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(86): GalleryController->render()
+#5 unknown(0): GalleryController->actionView()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): GalleryController->runAction()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): GalleryController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): GalleryController->run()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+in C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php (70)
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (86)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/11 15:34:32 [error] [exception.CException] exception 'CException' with message 'Property "TbEditableColumn.url" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\YiiBase.php(220): CComponent->__set('url', '/git/trunk/inde...')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(TbGridView))
+#2 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(125): CGridView->initColumns()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(359): TbGridView->initColumns()
+#4 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbGridView.php(68): CGridView->init()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(147): TbGridView->init()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#7 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(101): CBaseController->widget('booster.widgets...', Array)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#12 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(86): CController->render('view', Array)
+#13 [internal function]: GalleryController->actionView('1')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:34:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/test')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/test
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 15:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Image Not Found' in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 15:37:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Image Not Found' in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 15:38:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Image Not Found' in C:\xampp\htdocs\git\trunk\protected\controllers\ProductController.php:118
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ProductController->actionSetMainImage()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('setMainImage')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('product/setMain...')
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/git/trunk/index.php?r=product/setMainImage
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/view&id=1
+---
+2014/07/11 15:51:57 [error] [exception.CException] exception 'CException' with message 'Property "TbDetailView.url" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('url', Array)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(GalleryController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(16): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(88): CController->render('view', Array)
+#9 [internal function]: GalleryController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:52:01 [error] [exception.CException] exception 'CException' with message 'Property "TbDetailView.url" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('url', Array)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(GalleryController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(16): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(88): CController->render('view', Array)
+#9 [internal function]: GalleryController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:52:05 [error] [exception.CException] exception 'CException' with message 'Property "TbDetailView.url" is not defined.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWidgetFactory.php(161): CComponent->__set('url', Array)
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(GalleryController), 'booster.widgets...', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(172): CBaseController->createWidget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\gallery\view.php(16): CBaseController->widget('booster.widgets...', Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php(88): CController->render('view', Array)
+#9 [internal function]: GalleryController->actionView('1')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('gallery/view')
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/git/trunk/index.php?r=gallery/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
+---
+2014/07/11 15:54:46 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
+in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (70)
+in C:\xampp\htdocs\git\trunk\index.php (13)

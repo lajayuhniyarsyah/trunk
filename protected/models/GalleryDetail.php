@@ -8,6 +8,7 @@
  * @property string $caption
  * @property string $file_name
  * @property string $description
+ * @property string $gallery_id
  *
  * The followings are the available model relations:
  * @property Gallery[] $galleries
@@ -37,6 +38,8 @@ class GalleryDetail extends CActiveRecord
 			array('caption, file_name', 'length', 'max'=>255),
 			array('description', 'safe'),
 			array('file','file','types'=>'jpg,jpeg,png,JPEG,JPG,PNG'),
+			array('gallery_id','numerical','integerOnly'=>true),
+			array('gallery_id','required'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, caption, file_name, description', 'safe', 'on'=>'search'),
@@ -51,6 +54,7 @@ class GalleryDetail extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'Gallery'=>array(self::BELONGS_TO,'Gallery','gallery_id'),
 			'galleries' => array(self::HAS_MANY, 'Gallery', 'main_cover'),
 		);
 	}
@@ -65,6 +69,7 @@ class GalleryDetail extends CActiveRecord
 			'caption' => 'Caption',
 			'file_name' => 'File Name',
 			'description' => 'Description',
+			'gallery_id'=>'Gallery'
 		);
 	}
 
@@ -87,6 +92,7 @@ class GalleryDetail extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('gallery_id',$this->gallery_id);
 		$criteria->compare('caption',$this->caption,true);
 		$criteria->compare('file_name',$this->file_name,true);
 		$criteria->compare('description',$this->description,true);

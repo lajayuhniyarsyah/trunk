@@ -2,6 +2,16 @@
 
 class GalleryController extends Controller
 {
+
+	protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax']==='galleryDescriptionForm')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+	}
+
 	public function actionIndex()
 	{
 		$this->render('index');
@@ -49,12 +59,69 @@ class GalleryController extends Controller
 		$model = Gallery::model()->findByPk($id);
 		if(!$model) throw new CHttpException(404,'Gallery not found');
 
+		// GALLERY FORM AJAX VALIDATION
+		// $this->performAjaxValidation($model);
 		$photos = new CArrayDataProvider($model->details,array(
 			'keyField'=>'id',
 		));
 
 		$galleryDetail = new GalleryDetail;
+		if(isset($_POST['GalleryDetail'])){
+			$galleryDetail->attributes = $_POST['GalleryDetail'];
+			$galleryDetail->file = CUploadedFile::getInstance($galleryDetail,'file');
+			$galleryDetail->gallery_id=$model->id;
+			if($galleryDetail->file){
+				$galleryDetail->file_name=time().Yii::app()->user->getId().'.'.$galleryDetail->file->extensionName;
+			}
+			if($galleryDetail->save())
+			{
+				$this->redirect(array('view','id'=>$id));
+			}
+			// echo '<pre>';
+			// var_dump($galleryDetail);
+			// echo '</pre>';
+		}
+
+
+
+
 		$this->render('view',array('model'=>$model,'photos'=>$photos,'galleryDetail'=>$galleryDetail));
+	}
+
+	public function actionEditDetail(){
+		if(Yii::app()->request->isAjaxRequest && isset($_POST['scenario']))
+		{
+			$model = GalleryDetail::model()->findByPk($_POST['pk']);
+			if(!$model) throw new CHttpException(404,'Rejected!');
+
+			$model->{$_POST['name']}=$_POST['value'];
+			var_dump($model->attributes);
+			$model->update();
+			Yii::app()->user->updateSession();
+			Yii::app()->end();
+		}
+	}
+
+	public function actionDeleteDetail($id){
+		$model = GalleryDetail::model()->findByPk($id);
+		if(!$model) throw new CHttpException(404,'Data Not Found');
+
+		$model->delete();
+	}
+
+
+
+	public function actionSetMainImage(){
+		if(isset($_POST['id'])){
+			$id = (int) $_POST['id'];
+			$model = GalleryDetail::model()->findByPk($id);
+			if(!$model) throw new CHttpException(404,'Gallery Not Found');
+
+			$model->Gallery->main_cover = $model->id;
+			
+			$model->Gallery->update();
+			Yii::app()->end();
+		}
 	}
 
 	// Uncomment the following methods and override them if needed
