@@ -59,11 +59,20 @@ class GalleryController extends Controller
 		$model = Gallery::model()->findByPk($id);
 		if(!$model) throw new CHttpException(404,'Gallery not found');
 
+		if(isset($_POST['Gallery'])){
+			$model->attributes = $_POST['Gallery'];
+			if($model->update()){
+				$this->redirect(array('view','id'=>$model->id));
+			}
+		}
+
 		// GALLERY FORM AJAX VALIDATION
 		// $this->performAjaxValidation($model);
 		$photos = new CArrayDataProvider($model->details,array(
 			'keyField'=>'id',
 		));
+
+
 
 		$galleryDetail = new GalleryDetail;
 		if(isset($_POST['GalleryDetail'])){

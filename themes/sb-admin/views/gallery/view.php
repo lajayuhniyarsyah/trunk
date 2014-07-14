@@ -40,6 +40,24 @@
             // 40px is the height of the main navigation at bootstrap
             'dataProvider' => $photos,
             'template' => "{items}",
+            'selectionChanged'=>'function(id){
+                console.log(jQuery(\'input.chkBoxMainImage:checked\').val());
+                jQuery.ajax({
+                    url: "'.Yii::app()->createAbsoluteUrl('gallery/setMainImage').'",
+                    data: {id : jQuery(\'input.chkBoxMainImage:selected\').val() },
+                    type: "POST",
+                    success: function(data){
+                        if(data.execRow != 0){
+                            alert("Main Cover Has Been Set !");
+                        }else{
+                            alert("Nothing to set");
+                        }
+                    },
+                    error: function(data){
+                        alert("Error");
+                    }
+                });
+            }',
             'columns' => array(
                 array(
                     'class' => 'booster.widgets.tbEditableColumn',

@@ -3440,3 +3440,58 @@ HTTP_REFERER=http://localhost/git/trunk/index.php?r=gallery/admin
 2014/07/11 15:54:46 [warning] [application] Failed to set unsafe attribute "file" of "GalleryDetail".
 in C:\xampp\htdocs\git\trunk\protected\controllers\GalleryController.php (70)
 in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/14 14:55:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42804]: Datatype mismatch: 7 ERROR:  foreign key constraint "fk_schedule_booked" cannot be implemented
+DETAIL:  Key columns "schedule_id" and "id" are of incompatible types: numeric and integer.. The SQL statement executed was: ALTER TABLE "tbl_booked_schedule" ADD CONSTRAINT "fk_schedule_booked" FOREIGN KEY ("schedule_id") REFERENCES "tbl_schedule" ("id") ON DELETE CASCADE ON UPDATE CASCADE.
+2014/07/14 14:59:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=gii/controller/index
+---
+2014/07/14 15:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule
+---
+2014/07/14 15:19:15 [error] [exception.CException] exception 'CException' with message 'ScheduleController cannot find the requested view "admin".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('admin', NULL, true)
+#1 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(7): CController->render('admin')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionAdmin()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('admin')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/admin')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/admin
+---
+2014/07/14 15:20:28 [error] [php] Undefined variable: calendarEventsUrl (C:\xampp\htdocs\git\trunk\themes\sb-admin\views\schedule\admin.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(8): ScheduleController->render()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionAdmin()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): ScheduleController->runAction()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): ScheduleController->run()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=schedule/admin
+in C:\xampp\htdocs\git\trunk\themes\sb-admin\views\schedule\admin.php (29)
+in C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php (8)
+in C:\xampp\htdocs\git\trunk\index.php (13)
