@@ -9,7 +9,7 @@ Yii::setPathOfAlias('auth',dirname(__FILE__) . DIRECTORY_SEPARATOR . '../modules
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
-	'theme'=>'classic',
+	'theme'=>'front',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 

@@ -68,7 +68,7 @@ class SettingDetailController extends Controller
 	// Uncomment the following line if AJAX validation is needed
 	// $this->performAjaxValidation($model);
 
-		if(isset($_POST['SettingDetail']))
+		if(isset($_POST['SettingDetail']))	
 		{
 			$model->attributes=$_POST['SettingDetail'];
 			var_dump($model->attributes);
