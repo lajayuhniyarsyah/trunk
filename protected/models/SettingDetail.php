@@ -1,26 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "{{booked_schedule}}".
+ * This is the model class for table "{{setting_detail}}".
  *
- * The followings are the available columns in table '{{booked_schedule}}':
+ * The followings are the available columns in table '{{setting_detail}}':
  * @property integer $id
- * @property integer $schedule_id
- * @property integer $cart_id
- * @property integer $state
+ * @property integer $setting_id
+ * @property string $param
+ * @property string $value
  *
  * The followings are the available model relations:
- * @property Schedule $schedule
- * @property Cart $cart
+ * @property Setting $setting
  */
-class BookedSchedule extends CActiveRecord
+class SettingDetail extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{booked_schedule}}';
+		return '{{setting_detail}}';
 	}
 
 	/**
@@ -31,11 +30,13 @@ class BookedSchedule extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('schedule_id, cart_id', 'required'),
-			array('schedule_id, cart_id, state', 'numerical', 'integerOnly'=>true),
+			array('setting_id', 'required'),
+			array('setting_id', 'numerical', 'integerOnly'=>true),
+			array('param', 'length', 'max'=>255),
+			array('value', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, schedule_id, cart_id, state', 'safe', 'on'=>'search'),
+			array('id, setting_id, param, value', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,8 +48,7 @@ class BookedSchedule extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'schedule' => array(self::BELONGS_TO, 'Schedule', 'schedule_id'),
-			'cart' => array(self::BELONGS_TO, 'Cart', 'cart_id'),
+			'setting' => array(self::BELONGS_TO, 'Setting', 'setting_id'),
 		);
 	}
 
@@ -59,9 +59,9 @@ class BookedSchedule extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'schedule_id' => 'Schedule',
-			'cart_id' => 'Cart',
-			'state' => 'State',
+			'setting_id' => 'Setting',
+			'param' => 'Param',
+			'value' => 'Value',
 		);
 	}
 
@@ -84,9 +84,9 @@ class BookedSchedule extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('schedule_id',$this->schedule_id);
-		$criteria->compare('cart_id',$this->cart_id);
-		$criteria->compare('state',$this->state);
+		$criteria->compare('setting_id',$this->setting_id);
+		$criteria->compare('param',$this->param,true);
+		$criteria->compare('value',$this->value,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -97,7 +97,7 @@ class BookedSchedule extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return BookedSchedule the static model class
+	 * @return SettingDetail the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

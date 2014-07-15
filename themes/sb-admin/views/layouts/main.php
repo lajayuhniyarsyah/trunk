@@ -50,6 +50,7 @@
           <li><a href="<?php echo Yii::app()->createUrl('/cart/admin') ?>"><i class="fa fa-user"></i>Cart History</a></li>
           <li><a href="<?php echo Yii::app()->createUrl('/product/admin') ?>"><i class="fa fa-user"></i>Products</a></li>
           <li><a href="<?php echo Yii::app()->createUrl('/user/profile') ?>"><i class="fa fa-user"></i> My Profile</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/setting/admin') ?>"><i class="fa fa-user"></i> Settings</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">

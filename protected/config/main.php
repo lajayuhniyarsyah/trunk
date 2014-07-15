@@ -2,7 +2,7 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
-Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+// Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 Yii::setPathOfAlias('booster',dirname(__FILE__) . DIRECTORY_SEPARATOR . '../extensions/booster');
 Yii::setPathOfAlias('auth',dirname(__FILE__) . DIRECTORY_SEPARATOR . '../modules/auth');
 
@@ -64,6 +64,10 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
+			// 'class'=>'booster.gii.'
+			'generatorPaths' => array(
+	            'booster.gii'
+	        ),
 			'password'=>'a',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
@@ -73,9 +77,9 @@ return array(
 
 	// application components
 	'components'=>array(
-		'bootstrap'=>array(
+		/*'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
-        ),
+        ),*/
 		'authManager'=>array(
 			'behaviors'=>array(
 				'auth'=>array(

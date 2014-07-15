@@ -15,18 +15,18 @@ class m140714_115758_schedule extends CDbMigration
 	
 	// Use safeUp/safeDown to do migration with transaction
 
-	private $schedule = 'tbl_schedule';
-	private $booked_schedule = 'tbl_booked_schedule';
+	// private $schedule = 'tbl_schedule';
+	// private $booked_schedule = 'tbl_bookeds_schedule';
 
 	public function safeUp()
 	{
 
-		$this->createTable($this->schedule,array(
+		/*$this->createTable($this->schedule,array(
 			'id'=>'pk',
 			'date_time_start'=>'datetime not null',
-		));
+		));*/
 
-		$this->createTable($this->booked_schedule,array(
+		/*$this->createTable($this->booked_schedule,array(
 			'id'=>'pk',
 			'schedule_id'=>'integer not null',
 			'cart_id'=>'integer not null',
@@ -37,7 +37,7 @@ class m140714_115758_schedule extends CDbMigration
 		$this->addForeignKey('fk_schedule_booked',$this->booked_schedule,'schedule_id',$this->schedule,'id','CASCADE','CASCADE');
 
 		$this->createIndex('cart_cart_idX',$this->booked_schedule,'cart_id');
-		$this->addForeignKey('fk_cart_id',$this->booked_schedule,'cart_id','tbl_cart','id','CASCADE','CASCADE');
+		$this->addForeignKey('fk_cart_id',$this->booked_schedule,'cart_id','tbl_cart','id','CASCADE','CASCADE');*/
 
 	}
 

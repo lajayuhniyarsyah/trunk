@@ -1,23 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "{{schedule}}".
+ * This is the model class for table "{{setting}}".
  *
- * The followings are the available columns in table '{{schedule}}':
+ * The followings are the available columns in table '{{setting}}':
  * @property integer $id
- * @property string $date_time_start
+ * @property string $name
  *
  * The followings are the available model relations:
- * @property BookedSchedule[] $bookedSchedules
+ * @property SettingDetail[] $settingDetails
  */
-class Schedule extends CActiveRecord
+class Setting extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{schedule}}';
+		return '{{setting}}';
 	}
 
 	/**
@@ -28,10 +28,11 @@ class Schedule extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('date_time_start', 'required'),
+			array('name', 'required'),
+			array('name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, date_time_start', 'safe', 'on'=>'search'),
+			array('id, name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -43,7 +44,7 @@ class Schedule extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'bookedSchedules' => array(self::HAS_MANY, 'BookedSchedule', 'schedule_id'),
+			'settingDetails' => array(self::HAS_MANY, 'SettingDetail', 'setting_id'),
 		);
 	}
 
@@ -54,7 +55,7 @@ class Schedule extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'date_time_start' => 'Date Time Start',
+			'name' => 'Name',
 		);
 	}
 
@@ -77,7 +78,7 @@ class Schedule extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('date_time_start',$this->date_time_start,true);
+		$criteria->compare('name',$this->name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -88,7 +89,7 @@ class Schedule extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Schedule the static model class
+	 * @return Setting the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

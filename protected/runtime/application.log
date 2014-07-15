@@ -3495,3 +3495,480 @@ REQUEST_URI=/git/trunk/index.php?r=schedule/admin
 in C:\xampp\htdocs\git\trunk\themes\sb-admin\views\schedule\admin.php (29)
 in C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php (8)
 in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/15 12:47:16 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{schedule}}" for active record class "Schedule" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Schedule))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(14): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionCalendarEvents()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('calendarEvents')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/calend...')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/calendarEvents&start=1406394000&end=1410022800&_=1405421236074
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=schedule/admin
+---
+2014/07/15 12:47:17 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{schedule}}" for active record class "Schedule" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Schedule))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(14): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionCalendarEvents()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('calendarEvents')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/calend...')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/calendarEvents&start=1403974800&end=1407603600&_=1405421237029
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=schedule/admin
+---
+2014/07/15 12:47:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{schedule}}" for active record class "Schedule" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Schedule))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(14): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionCalendarEvents()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('calendarEvents')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/calend...')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/calendarEvents&start=1403974800&end=1407603600&_=1405421245109
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=schedule/admin
+---
+2014/07/15 13:37:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "id" does not exist. The SQL statement executed was: ALTER TABLE "tbl_setting_detail" ADD CONSTRAINT "fk_setting_detail_setting" FOREIGN KEY ("tbl_setting") REFERENCES "id" ("RESTRICT") ON DELETE RESTRICT.
+2014/07/15 13:37:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "setting_id" violates not-null constraint
+DETAIL:  Failing row contains (1, null, mode, normal).. The SQL statement executed was: INSERT INTO "tbl_setting_detail" ("param", "value") VALUES (:param, :value).
+2014/07/15 13:40:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{schedule}}" for active record class "Schedule" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Schedule))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(14): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionCalendarEvents()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('calendarEvents')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/calend...')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/calendarEvents&start=1403974800&end=1407603600&_=1405424428038
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=schedule/admin
+---
+2014/07/15 13:40:29 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{schedule}}" for active record class "Schedule" cannot be found in the database.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Schedule))
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\git\trunk\protected\controllers\ScheduleController.php(14): CActiveRecord->findAll()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): ScheduleController->actionCalendarEvents()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('calendarEvents')
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/calend...')
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/git/trunk/index.php?r=schedule/calendarEvents&start=1403974800&end=1407603600&_=1405424429308
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=schedule/admin
+---
+2014/07/15 14:00:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "tbl_setting_pkey"
+DETAIL:  Key (id)=(1) already exists.. The SQL statement executed was: INSERT INTO "tbl_setting" ("name") VALUES (:yp0).
+in C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php (74)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/15 14:00:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "tbl_setting_pkey"
+DETAIL:  Key (id)=(1) already exists.. The SQL statement executed was: INSERT INTO "tbl_setting" ("name") VALUES (:yp0)' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php(74): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SettingController->actionCreate()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('setting/create')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=setting/create
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/create
+---
+2014/07/15 14:00:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "tbl_setting_pkey"
+DETAIL:  Key (id)=(2) already exists.. The SQL statement executed was: INSERT INTO "tbl_setting" ("name") VALUES (:yp0).
+in C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php (74)
+in C:\xampp\htdocs\git\trunk\index.php (13)
+2014/07/15 14:00:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "tbl_setting_pkey"
+DETAIL:  Key (id)=(2) already exists.. The SQL statement executed was: INSERT INTO "tbl_setting" ("name") VALUES (:yp0)' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php(74): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SettingController->actionCreate()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('setting/create')
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/git/trunk/index.php?r=setting/create
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/create
+---
+2014/07/15 14:15:01 [error] [exception.CException] exception 'CException' with message 'CArrayDataProvider and its behaviors do not have a method or closure named "search".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php(31): CComponent->__call('search', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php(31): CArrayDataProvider->search()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php(62): CController->render('view', Array)
+#7 [internal function]: SettingController->actionView('1')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingController), Array)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('setting/view')
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/git/trunk/index.php?r=setting/view&id=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/admin
+---
+2014/07/15 14:20:46 [error] [php] Undefined variable: rtn (C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php:33)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CDataColumn.php(137): TbDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridColumn.php(151): TbDataColumn->renderDataCellContent()
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(616): TbDataColumn->renderDataCell()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(572): TbGridView->renderTableRow()
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\grid\CGridView.php(482): TbGridView->renderTableBody()
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(167): TbGridView->renderItems()
+#6 unknown(0): TbGridView->renderSection()
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\zii\widgets\CBaseListView.php(135): TbGridView->renderContent()
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): TbGridView->run()
+#10 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php(51): SettingController->widget()
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): SettingController->renderInternal()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): SettingController->renderFile()
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): SettingController->renderPartial()
+#15 C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php(62): SettingController->render()
+#16 unknown(0): SettingController->actionView()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): SettingController->runAction()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): SettingController->filterAccessControl()
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): SettingController->runActionWithFilters()
+#27 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): SettingController->run()
+#28 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\git\trunk\index.php(13): CWebApplication->run()
+REQUEST_URI=/git/trunk/index.php?r=setting/view&id=2
+in C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php (33)
+in C:\xampp\htdocs\git\trunk\themes\sb-admin\views\setting\view.php (51)
+in C:\xampp\htdocs\git\trunk\protected\controllers\SettingController.php (62)
+2014/07/15 14:28:56 [error] [exception.CException] exception 'CException' with message 'SettingDetailController cannot find the requested view "create".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(78): CController->render('create', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SettingDetailController->actionCreate()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create
+---
+2014/07/15 14:29:50 [error] [exception.CException] exception 'CException' with message 'SettingDetailController cannot find the requested view "create".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#1 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(78): CController->render('create', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SettingDetailController->actionCreate()
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create
+---
+2014/07/15 14:41:14 [error] [exception.CException] exception 'CException' with message 'TbTags must specify "model" and "attribute" or "name" property values.' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\protected\extensions\booster\widgets\TbTags.php(142): CInputWidget->resolveNameID()
+#1 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(173): TbTags->run()
+#2 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(18): CBaseController->widget('booster.widgets...', Array)
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(79): CController->render('create', Array)
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(49): SettingDetailController->actionCreate()
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create
+---
+2014/07/15 14:49:26 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "dropDownFieldGroup".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): CComponent->__call('dropDownFieldGr...', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): TbActiveForm->dropDownFieldGroup(Object(SettingDetail), 'setting_id', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/view&id=1
+---
+2014/07/15 14:51:10 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "dropDown".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): CComponent->__call('dropDown', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): TbActiveForm->dropDown(Object(SettingDetail), 'setting_id', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/view&id=1
+---
+2014/07/15 14:53:07 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "dropDown".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): CComponent->__call('dropDown', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): TbActiveForm->dropDown(Object(SettingDetail), 'setting_id', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/view&id=1
+---
+2014/07/15 14:53:08 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "dropDown".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): CComponent->__call('dropDown', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(12): TbActiveForm->dropDown(Object(SettingDetail), 'setting_id', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+HTTP_REFERER=http://localhost/git/trunk/index.php?r=setting/view&id=1
+---
+2014/07/15 15:20:01 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "attributeName".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(10): CComponent->__call('attributeName', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(10): TbActiveForm->attributeName(Object(SettingDetail), 'setting_id')
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+---
+2014/07/15 15:22:46 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "textFiel".' in C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(30): CComponent->__call('textFiel', Array)
+#1 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\_form.php(30): TbActiveForm->textFiel(Object(SettingDetail), 'param', Array)
+#2 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\git\trunk\themes\sb-admin\views\settingDetail\create.php(15): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\git\trunk\protected\controllers\SettingDetailController.php(82): CController->render('create', Array)
+#11 [internal function]: SettingDetailController->actionCreate('1')
+#12 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SettingDetailController), Array)
+#13 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SettingDetailController), Object(ReflectionMethod), Array)
+#14 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(282): CController->run('create')
+#23 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\web\CWebApplication.php(141): CWebApplication->runController('settingDetail/c...')
+#24 C:\xampp\htdocs\yii-1.1.14.f0fee9\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\git\trunk\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/git/trunk/index.php?r=settingDetail/create&for=1
+---

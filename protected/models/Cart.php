@@ -10,6 +10,7 @@
  * @property string $sess_id
  * @property integer $type
  * @property integer $state
+ * @property integer $pass_scheduled
  *
  * The followings are the available model relations:
  * @property Users $user
@@ -34,12 +35,12 @@ class Cart extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('code, user_id, sess_id', 'required'),
-			array('user_id, type, state', 'numerical', 'integerOnly'=>true),
+			array('user_id, type, state, pass_scheduled', 'numerical', 'integerOnly'=>true),
 			array('code', 'length', 'max'=>20),
 			array('sess_id', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, code, user_id, sess_id, type, state', 'safe', 'on'=>'search'),
+			array('id, code, user_id, sess_id, type, state, pass_scheduled', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,6 +69,7 @@ class Cart extends CActiveRecord
 			'sess_id' => 'Sess',
 			'type' => 'Type',
 			'state' => 'State',
+			'pass_scheduled' => 'Pass Scheduled',
 		);
 	}
 
@@ -95,6 +97,7 @@ class Cart extends CActiveRecord
 		$criteria->compare('sess_id',$this->sess_id,true);
 		$criteria->compare('type',$this->type);
 		$criteria->compare('state',$this->state);
+		$criteria->compare('pass_scheduled',$this->pass_scheduled);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
