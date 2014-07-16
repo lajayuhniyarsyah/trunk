@@ -6,12 +6,12 @@
  * The followings are the available columns in table '{{product}}':
  * @property integer $id
  * @property string $name
- * @property integer $qty
  * @property string $price
  * @property string $tags
  *
  * The followings are the available model relations:
  * @property ProductImages[] $productImages
+ * @property ProductList[] $productLists
  */
 class Product extends CActiveRecord
 {
@@ -31,13 +31,11 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('qty', 'numerical', 'integerOnly'=>true),
 			array('name, tags', 'length', 'max'=>255),
-			array('price','numerical','integerOnly'=>false,),
-			// array('price', 'safe'),
+			array('price', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, qty, price, tags', 'safe', 'on'=>'search'),
+			array('id, name, price, tags', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,6 +48,7 @@ class Product extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'productImages' => array(self::HAS_MANY, 'ProductImages', 'product_id'),
+			'productLists' => array(self::HAS_MANY, 'ProductList', 'product_id'),
 		);
 	}
 
@@ -61,7 +60,6 @@ class Product extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'qty' => 'Stock',
 			'price' => 'Price',
 			'tags' => 'Tags',
 		);
@@ -87,7 +85,6 @@ class Product extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('qty',$this->qty);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('tags',$this->tags,true);
 

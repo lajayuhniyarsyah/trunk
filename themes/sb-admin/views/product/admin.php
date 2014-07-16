@@ -14,10 +14,10 @@
             'dataProvider' => $model->search(),
             'template' => "{items}",
             'columns' => array(
-                'id',
+                // 'id',
                 'name',
                 'price',
-                'qty',
+                // 'qty',
                 'tags',
                 array(
                     'class'=>'booster.widgets.TbButtonColumn'

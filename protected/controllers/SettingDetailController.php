@@ -50,8 +50,11 @@ class SettingDetailController extends Controller
 	*/
 	public function actionView($id)
 	{
+		Yii::app()->theme = Yii::app()->params['adminTheme'];
+		$model = $this->loadModel($id);
+		echo $model->value;
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 			));
 	}
 
@@ -71,8 +74,9 @@ class SettingDetailController extends Controller
 		if(isset($_POST['SettingDetail']))	
 		{
 			$model->attributes=$_POST['SettingDetail'];
+			// $model->validate();
 			var_dump($model->attributes);
-			die();
+			// die();
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

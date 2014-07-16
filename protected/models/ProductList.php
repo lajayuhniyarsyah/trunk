@@ -1,25 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "{{setting_detail}}".
+ * This is the model class for table "{{product_list}}".
  *
- * The followings are the available columns in table '{{setting_detail}}':
+ * The followings are the available columns in table '{{product_list}}':
  * @property integer $id
- * @property integer $setting_id
- * @property string $param
- * @property string $value
+ * @property integer $product_id
+ * @property string $size
+ * @property integer $stock
  *
  * The followings are the available model relations:
- * @property Setting $setting
+ * @property Product $product
  */
-class SettingDetail extends CActiveRecord
+class ProductList extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{setting_detail}}';
+		return '{{product_list}}';
 	}
 
 	/**
@@ -30,52 +30,14 @@ class SettingDetail extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('setting_id', 'required'),
-			array('setting_id', 'numerical', 'integerOnly'=>true),
-			array('param', 'length', 'max'=>255),
-			array('value', 'safe'),
-			array('value','valueHandler'),
+			array('size,product_id,size', 'required'),
+			array('product_id, stock', 'numerical', 'integerOnly'=>true),
+			// array('product_id','exists','className'=>'Product','attributeName'=>'id'),
+			array('size', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, setting_id, param, value', 'safe', 'on'=>'search'),
+			array('id, product_id, size, stock', 'safe', 'on'=>'search'),
 		);
-	}
-
-	public function valueHandler($attribute,$params)
-	{
-		$array=false;
-		$return=false;
-
-
-		// check null first
-		if(!$this->value){
-			$this->addError($attribute,'Value can\'t be blank!');
-			$return = false;
-		}else{
-			$exp = explode('|',$this->value);
-			
-			if(is_array($exp)){
-				$array = true;
-				$this->value = $exp;
-			}
-
-
-			if($array){
-				// add validation
-				var_dump(count($array));
-				if(count($array)==0){
-					$return =false;
-					$this->addError($attribute,'Value can\'t be blank!');
-				}else{
-					$this->value = CJSON::encode($this->value);
-					$return =true;
-				}
-			}else{
-				$return = true;
-			}
-		}
-
-		return $return;
 	}
 
 	/**
@@ -86,7 +48,7 @@ class SettingDetail extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'setting' => array(self::BELONGS_TO, 'Setting', 'setting_id'),
+			'product' => array(self::BELONGS_TO, 'Product', 'product_id'),
 		);
 	}
 
@@ -97,9 +59,9 @@ class SettingDetail extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'setting_id' => 'Setting',
-			'param' => 'Param',
-			'value' => 'Value',
+			'product_id' => 'Product',
+			'size' => 'Size',
+			'stock' => 'Stock',
 		);
 	}
 
@@ -122,9 +84,9 @@ class SettingDetail extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('setting_id',$this->setting_id);
-		$criteria->compare('param',$this->param,true);
-		$criteria->compare('value',$this->value,true);
+		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('size',$this->size,true);
+		$criteria->compare('stock',$this->stock);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -135,7 +97,7 @@ class SettingDetail extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return SettingDetail the static model class
+	 * @return ProductList the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
