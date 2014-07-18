@@ -94,9 +94,12 @@ class ProductController extends Controller
 		$model = Product::model()->findByPk($id);
 		if(!$model) throw new CHttpException(404,'Data Not Found!');
 
-		
+
 		$this->renderPartial('update',array('model'=>$model));
 	}
+
+
+	
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

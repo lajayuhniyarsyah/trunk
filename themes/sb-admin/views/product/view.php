@@ -31,9 +31,28 @@
             'dataProvider' => $listDataProvider,
             'template' => "{items}",
             'columns' => array(
-                'size',
+                 array(
+                    'name' => 'size',
+                    'class' => 'booster.widgets.TbEditableColumn',
+                    'headerHtmlOptions' => array('style' => 'width:200px'),
+                    'editable' => array(
+                        'type' => 'text',
+                        'url' => array('productList/editable'),
+                        'placement'=>'right'
+                    )
+                ),
                 // 'qty',
-                'stock',
+                // 'stock',
+                array(
+                    'name' => 'stock',
+                    'class' => 'booster.widgets.TbEditableColumn',
+                    'headerHtmlOptions' => array('style' => 'width:200px'),
+                    'editable' => array(
+                        'type' => 'text',
+                        'url' => array('productList/editable'),
+                        'placement'=>'top'
+                    )
+                ),
                 /*array(
                     'name'=>'file_name',
                     'value'=>function($data){
