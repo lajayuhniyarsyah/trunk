@@ -216,3 +216,5 @@ application.log
 images/
 *.log
 protected/runtime/application.log
+*.log
+protected/runtime/application.log
