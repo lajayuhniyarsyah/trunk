@@ -15,9 +15,9 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 /assets/
-application.log
+*application.log
+/protected/runtime/
 images/
 *.log
 protected/runtime/application.log
-*.log
-protected/runtime/application.log
+themes/front/assets/
