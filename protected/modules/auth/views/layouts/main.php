@@ -5,7 +5,7 @@
 <div class="auth-module">
 
     <?php $this->widget(
-        'bootstrap.widgets.TbNav',
+        'booster.widgets.TbNav',
         array(
             'type' => 'tabs',
             'items' => array(

@@ -32,12 +32,13 @@ class AuthModule extends CWebModule
      * @var string name of the user name column.
      * Change this if the name column in your user table is different than the default value.
      */
-    public $userNameColumn = 'name';
+    public $userNameColumn = 'username';
     /**
      * @var string the application layout.
      * Change this if you wish to use a different layout with the module.
      */
-    public $defaultLayout = 'application.views.layouts.main';
+    public $defaultLayout;//'application.themes.sb-admin.views.layouts';
+    // public $defaultLayout = 'application.views.layouts'
     /**
      * @var array map of flash message keys to use for the module.
      */
@@ -113,6 +114,8 @@ class AuthModule extends CWebModule
     public function beforeControllerAction($controller, $action)
     {
         if (parent::beforeControllerAction($controller, $action)) {
+            Yii::app()->getComponent("booster");
+            Yii::app()->theme = 'sb-admin';
             $user = Yii::app()->getUser();
 
             if ($user instanceof AuthWebUser) {

@@ -37,7 +37,7 @@ class m140703_111453_create_product extends CDbMigration
 			array(
 				'id'=>'pk',
 				'product_id'=>'integer not null',
-				'size'=>'varchar(1) not null',
+				'size'=>'varchar(3) not null',
 				'stock'=>'integer default 0',
 			)
 		);

@@ -159,7 +159,7 @@
         jQuery(\'input.chkBoxMainImage\').click(function(){
             var imgId = jQuery(this).val();
             jQuery.ajax({
-                url: "'.Yii::app()->createAbsoluteUrl('product/setMainImage').'",
+                url: "'.Yii::app()->createAbsoluteUrl('/manager/product/setMainImage').'",
                 data: {id : jQuery(this).val(),productId:'.$model->id.' },
                 type: "POST",
                 success: function(data){

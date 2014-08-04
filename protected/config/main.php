@@ -30,8 +30,8 @@ return array(
 	),
 
 	'modules'=>array(
-
-		'auth',
+		'manager',
+		// 'auth',
 		 'user'=>array(
             # encrypting method (php hash function)
             'hash' => 'md5',
@@ -83,13 +83,15 @@ return array(
 		/*'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
         ),*/
-		'authManager'=>array(
+		/*'authManager'=>array(
+			'class'=>'CDbAuthManager',
+			'connectionID'=>'db',
 			'behaviors'=>array(
 				'auth'=>array(
-					'class'=>'auth.components.AuthBehavior'
+					'class'=>'application.modules.auth.components.AuthBehavior'
 				)
 			),
-		),
+		),*/
 		'booster'=>array(
 			'class'=>'booster.components.Booster',
 		),

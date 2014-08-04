@@ -33,7 +33,7 @@ class ProductList extends CActiveRecord
 			array('size,product_id,size', 'required'),
 			array('product_id, stock', 'numerical', 'integerOnly'=>true),
 			// array('product_id','exists','className'=>'Product','attributeName'=>'id'),
-			array('size', 'length', 'max'=>1),
+			array('size', 'length', 'max'=>3),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, product_id, size, stock', 'safe', 'on'=>'search'),

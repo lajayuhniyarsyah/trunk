@@ -33,7 +33,7 @@ class AuthAssignmentViewColumn extends AuthAssignmentColumn
     {
         if (!Yii::app()->user->isAdmin) {
             $this->grid->controller->widget(
-                'bootstrap.widgets.TbButton',
+                'booster.widgets.TbButton',
                 array(
                     'type' => 'link',
                     'size' => 'mini',

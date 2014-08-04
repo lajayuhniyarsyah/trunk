@@ -95,4 +95,9 @@ class Setting extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+
+	public function getCartMode(){
+		return SettingDetail::model()->getCartMode();
+	}
 }

@@ -14,6 +14,8 @@
  */
 class SettingDetail extends CActiveRecord
 {
+	const CARTMODE_NORMAL="normal";
+	const CARTMODE_TRUNK="trunk";
 	/**
 	 * @return string the associated database table name
 	 */
@@ -66,7 +68,10 @@ class SettingDetail extends CActiveRecord
 				if(count($array)==0){
 					$return =false;
 					$this->addError($attribute,'Value can\'t be blank!');
-				}else{
+				}elseif(count($array)==1){
+					$this->value = $exp[0];
+				}
+				else{
 					$this->value = CJSON::encode($this->value);
 					$return =true;
 				}
@@ -140,5 +145,17 @@ class SettingDetail extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function getCartMode(){
+		// CART MODEIS ALWAYS HAVE ID "1"
+		return self::findByPk(1);
+	}
+	
+
+	public function setCartMode($to){
+		$mode = self::getCartMode();
+		$mode->value = $to;
+		$mode->save();
 	}
 }

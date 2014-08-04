@@ -4,16 +4,17 @@ class ProductController extends Controller
 {
 	public function actionIndex()
 	{
-		Yii::app()->theme = 'sb-admin';
+		Yii::app()->theme = Yii::app()->params['adminTheme'];
 		$this->render('index');
 	}
 	public function actionAdmin()
 	{
+
 		Yii::app()->theme = Yii::app()->params['adminTheme'];
 		$model = new Product('search');
 		$model->unsetAttributes();
 		if(isset($_GET['Product'])){
-
+			
 		}
 
 		$this->render('admin',array('model'=>$model));
@@ -142,7 +143,7 @@ class ProductController extends Controller
 			$model = ProductImages::model()->findByPk($id);
 			if(!$model) throw new CHttpException(404,'Image Not Found');
 			// find product images who checked
-			$checked = ProductImages::model()->findByAttributes(array('product_id'=>$_POST['productId'],'main_image'=>true));
+			$checked = ProductImages::model()->findByAttributes(array('product_id'=>$_POST['productId'],'main_image'=>1));
 			if($checked){
 				$checked->main_image = 0;
 				$checked->update();

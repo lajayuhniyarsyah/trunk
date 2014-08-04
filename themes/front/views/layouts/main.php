@@ -68,12 +68,27 @@
                     <span>Checkout</span>
                   </a>
                 </li>
-                <li>
-                  <a href="<?php echo Yii::app()->createUrl('site/page',array('view'=>'login')); ?>">
-                    <span class="ir icon log-in"></span>
-                    <span>Log in</span>
-                  </a>
-                </li>
+                <?php
+                  if(Yii::app()->user->isGuest):
+                  ?>
+                  <li>
+                    <a href="<?php echo Yii::app()->createUrl('site/login'); ?>">
+                      <span class="ir icon log-in"></span>
+                      <span>Log in</span>
+                    </a>
+                  </li>
+                  <?php
+                  else:
+                  ?>
+                  <li>
+                    <a href="<?php echo Yii::app()->createUrl('user/logout'); ?>">
+                      <span class="ir icon log-in"></span>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+                  <?php
+                  endif;
+                ?>
               </ul>
             </div>
             

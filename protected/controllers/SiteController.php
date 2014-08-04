@@ -77,7 +77,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+		/*$model=new LoginForm;
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -93,7 +93,33 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
-		}
+		}*/
+
+
+		$model=new UserLogin;
+		if (Yii::app()->user->isGuest) {
+			
+			// collect user input data
+			if(isset($_POST['UserLogin']))	
+			{
+				// echo Yii::app()->user->returnUrl;
+				// die('aa');
+				$model->attributes=$_POST['UserLogin'];
+				// validate user input and redirect to previous page if valid
+				if($model->validate()) {
+					$this->lastViset();
+					// if (Yii::app()->user->returnUrl=='/index.php')
+					if(preg_match('/\/index\.php/', Yii::app()->user->returnUrl))
+						$this->redirect(Yii::app()->user->returnUrl);
+					else
+						$this->redirect(Yii::app()->user->returnUrl);
+				}
+			}
+			// display the login form
+			$this->render('login',array('model'=>$model));
+		} else
+			$this->redirect(Yii::app()->user->returnUrl);
+
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
@@ -105,5 +131,10 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+	private function lastViset() {
+		$lastVisit = User::model()->notsafe()->findByPk(Yii::app()->user->id);
+		$lastVisit->lastvisit = time();
+		$lastVisit->save();
 	}
 }

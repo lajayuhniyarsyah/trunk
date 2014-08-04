@@ -20,7 +20,7 @@ $this->breadcrumbs = array(
         <small><?php echo $this->getTypeText(); ?></small>
     </h1>
 
-    <?php $this->widget('bootstrap.widgets.TbButtonGroup',
+    <?php $this->widget('booster.widgets.TbButtonGroup',
         array(
             'htmlOptions' => array('class'=>'pull-right'),
             'buttons' => array(
@@ -79,7 +79,7 @@ $this->breadcrumbs = array(
         </h3>
 
         <?php $this->widget(
-            'bootstrap.widgets.TbGridView',
+            'booster.widgets.TbGridView',
             array(
                 'type' => 'striped condensed hover',
                 'dataProvider' => $ancestorDp,
@@ -113,7 +113,7 @@ $this->breadcrumbs = array(
         </h3>
 
         <?php $this->widget(
-            'bootstrap.widgets.TbGridView',
+            'booster.widgets.TbGridView',
             array(
                 'type' => 'striped condensed hover',
                 'dataProvider' => $descendantDp,
@@ -150,7 +150,7 @@ $this->breadcrumbs = array(
             <h4><?php echo Yii::t('AuthModule.main', 'Add child'); ?></h4>
 
             <?php $form = $this->beginWidget(
-                'bootstrap.widgets.TbActiveForm',
+                'booster.widgets.TbActiveForm',
                 array(
                     'type'=>'inline',
                 )
@@ -158,7 +158,7 @@ $this->breadcrumbs = array(
 
             <?php echo $form->dropDownListRow($formModel, 'items', $childOptions, array('label' => false)); ?>
 
-            <?php $this->widget('bootstrap.widgets.TbButton',
+            <?php $this->widget('booster.widgets.TbButton',
                 array(
                     'buttonType' => 'submit',
                     'label' => Yii::t('AuthModule.main', 'Add'),

@@ -9,14 +9,15 @@ $this->breadcrumbs = array(
 
 <h1><?php echo $this->capitalize($this->getTypeText(true)); ?></h1>
 
-<?php $this->widget('bootstrap.widgets.TbButton', array(
-        'type' => 'primary',
+<?php $this->widget('booster.widgets.TbButton', array(
+        'buttonType' => 'link',
+        'context'=>'primary',
         'label' => Yii::t('AuthModule.main', 'Add {type}', array('{type}' => $this->getTypeText())),
         'url' => array('create'),
     )); ?>
 
 <?php $this->widget(
-    'bootstrap.widgets.TbGridView',
+    'booster.widgets.TbGridView',
     array(
         'type' => 'striped hover',
         'dataProvider' => $dataProvider,
@@ -36,7 +37,7 @@ $this->breadcrumbs = array(
                 'htmlOptions' => array('class' => 'item-description-column'),
             ),
             array(
-                'class' => 'bootstrap.widgets.TbButtonColumn',
+                'class' => 'booster.widgets.TbButtonColumn',
                 'viewButtonLabel' => Yii::t('AuthModule.main', 'View'),
                 'viewButtonUrl' => "Yii::app()->controller->createUrl('view', array('name'=>\$data->name))",
                 'updateButtonLabel' => Yii::t('AuthModule.main', 'Edit'),

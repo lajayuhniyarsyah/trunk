@@ -45,12 +45,21 @@
           <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
           <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
           <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-          <li><a href="<?php echo Yii::app()->createUrl('/schedule/admin') ?>"><i class="fa fa-wrench"></i>Schedule</a></li>
-          <li><a href="<?php echo Yii::app()->createUrl('/gallery/admin') ?>"><i class="fa fa-wrench"></i>Gallery</a></li>
-          <li><a href="<?php echo Yii::app()->createUrl('/cart/admin') ?>"><i class="fa fa-user"></i>Cart History</a></li>
-          <li><a href="<?php echo Yii::app()->createUrl('/product/admin') ?>"><i class="fa fa-user"></i>Products</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/manager/schedule/admin') ?>"><i class="fa fa-wrench"></i>Schedule</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/manager/gallery/admin') ?>"><i class="fa fa-wrench"></i>Gallery</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/manager/cart/admin') ?>"><i class="fa fa-user"></i>Cart History</a></li>
+          <li><a href="<?php echo Yii::app()->createUrl('/manager/product/admin') ?>"><i class="fa fa-user"></i>Products</a></li>
           <li><a href="<?php echo Yii::app()->createUrl('/user/profile') ?>"><i class="fa fa-user"></i> My Profile</a></li>
-          <li><a href="<?php echo Yii::app()->createUrl('/setting/admin') ?>"><i class="fa fa-user"></i> Settings</a></li>
+          <li>
+            <a href="<?php echo Yii::app()->createUrl('/auth') ?>"><i class="fa fa-user"></i>Auth</a>
+            <ul>
+              <li><a href="<?php echo $this->createAbsoluteUrl('/auth/assignment/index'); ?>">Assignment</a></li>
+              <li><a href="<?php echo $this->createAbsoluteUrl('/auth/role/index'); ?>">Role</a></li>
+              <li><a href="<?php echo $this->createAbsoluteUrl('/auth/task/index'); ?>">Task</a></li>
+              <li><a href="<?php echo $this->createAbsoluteUrl('/auth/operation/index'); ?>">Operation</a></li>
+            </ul>
+          </li>
+          <li><a href="<?php echo Yii::app()->createUrl('/manager/setting/admin') ?>"><i class="fa fa-user"></i> Settings</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -63,6 +72,21 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right navbar-user">
+          
+
+          <li class="dropdown user-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> Cart Mode is <?php $cartMode = SettingDetail::model()->getCartMode(); echo ucwords(CHtml::encode($cartMode->value)); ?> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="<?php echo Yii::app()->createUrl('manager/setting/setCartMode',array('to'=>'normal')) ?>">Normal <?php if($cartMode->value=='normal')echo '<i class="fa fa-check"></i>'; ?></a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('manager/setting/setCartMode',array('to'=>'trunk')) ?>">Trunk <?php if($cartMode->value!='normal')echo '<i class="fa fa-check"></i>'; ?></a></li>
+              <!-- <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+              <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li> -->
+              <!-- <li class="divider"></li>
+              <li><a href="<?php echo Yii::app()->createUrl('user/logout'); ?>"><i class="fa fa-power-off"></i> Log Out</a></li> -->
+            </ul>
+          </li>
+
           <li class="dropdown messages-dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -117,7 +141,7 @@
               <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
               <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
               <li class="divider"></li>
-              <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              <li><a href="<?php echo Yii::app()->createUrl('user/logout'); ?>"><i class="fa fa-power-off"></i> Log Out</a></li>
             </ul>
           </li>
         </ul>
@@ -128,7 +152,12 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <h1><?php echo $this->pageTitle; ?> <small><?php echo $this->pageSubTitle; ?></small></h1>
+          <h1>
+            <?php echo $this->pageTitle; ?>
+            <?php if(isset($this->pageSubTitle)): ?>
+              <small><?php echo $this->pageSubTitle; ?></small>
+            <?php endif; ?>
+          </h1>
           <ol class="breadcrumb">
             <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
           </ol>
@@ -152,8 +181,8 @@
   <!--<script src="js/bootstrap.js"></script>-->
 
   <!-- Page Specific Plugins -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-  <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>-->
   <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/morris/chart-data-morris.js"></script>
   <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/tablesorter/jquery.tablesorter.js"></script>
   <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/tablesorter/tables.js"></script>

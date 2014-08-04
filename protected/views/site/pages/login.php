@@ -76,16 +76,16 @@
                         Already registered
                       </p>
                       
-                      <form action="#" method="post" id="form-2">
+                      <form action="" method="post" id="form-2">
                         <ul class="rr">
                           <li>
                             <label>
-                              <input type="text" name="account" placeholder="Your account..."/>
+                              <input type="text" name="<?php echo CHtml::activeName($model,'username'); ?>" placeholder="Your account..."/>
                             </label>
                           </li>
                           <li>
                             <label>
-                              <input type="password" name="password" placeholder="Your password..."/>
+                              <input type="password" name="<?php echo CHtml::activeName($model,'password'); ?>" placeholder="Your password..."/>
                             </label>
                           </li>
                         </ul>

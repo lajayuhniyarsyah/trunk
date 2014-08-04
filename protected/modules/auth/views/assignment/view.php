@@ -26,7 +26,7 @@ $this->breadcrumbs = array(
         </h3>
 
         <?php $this->widget(
-            'bootstrap.widgets.TbGridView',
+            'booster.widgets.TbGridView',
             array(
                 'type' => 'striped condensed hover',
                 'dataProvider' => $authItemDp,
@@ -55,7 +55,7 @@ $this->breadcrumbs = array(
             <h4><?php echo Yii::t('AuthModule.main', 'Assign permission'); ?></h4>
 
             <?php $form = $this->beginWidget(
-                'bootstrap.widgets.TbActiveForm',
+                'booster.widgets.TbActiveForm',
                 array(
                     'type' => 'inline',
                 )
@@ -63,7 +63,7 @@ $this->breadcrumbs = array(
 
             <?php echo $form->dropDownList($formModel, 'items', $assignmentOptions, array('label' => false)); ?>
 
-            <?php $this->widget('bootstrap.widgets.TbButton', array(
+            <?php $this->widget('booster.widgets.TbButton', array(
                     'buttonType' => 'submit',
                     'label' => Yii::t('AuthModule.main', 'Assign'),
                 )); ?>
